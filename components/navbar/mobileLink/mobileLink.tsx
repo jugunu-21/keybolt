@@ -29,7 +29,7 @@ import {
                 >
                     {links.map((l) => (
                         <DropdownMenu key={l.title}>
-                            <DropdownMenuTrigger className="text-stone-400 ">{l.title}</DropdownMenuTrigger>
+                            <DropdownMenuTrigger className="text-stone-400  text-bold ">{l.title}</DropdownMenuTrigger>
                            
                                 <DropdownMenuContent >
                                 {l.sublinks.map((sl) => (
