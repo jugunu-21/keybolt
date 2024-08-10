@@ -1,20 +1,4 @@
-import React, {
-    Dispatch,
-    ReactNode,
-    SetStateAction,
-    useMemo,
-    useState,
-} from "react";
 
-import { FiMenu } from "react-icons/fi";
-import {
-    DropdownMenu,
-    DropdownMenuContent,
-    DropdownMenuItem,
-    DropdownMenuLabel,
-    DropdownMenuSeparator,
-    DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
 import {links} from "@/public/navdata"
 import {RoundedDrawerNav} from "../navbar/roundedDrawerNav/roundedDrawerNav"
 export const RoundedDrawerNavExample = () => {
