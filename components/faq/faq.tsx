@@ -11,32 +11,24 @@ function BasicFAQ  () {
         <h3 className="mb-4 text-center text-3xl font-semibold">
           Frequently asked questions
         </h3>
-        <Question title="Why is the sky blue?" defaultOpen>
+        <Question title="What is Keybolt and what does it offer?" defaultOpen>
           <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-            laboriosam neque reprehenderit saepe eius dolorum vel consequuntur
-            perspiciatis ad vero.
+          Keybolt is a company dedicated to supporting local food businesses by providing affordable and accessible AI-based tools. Our digital assistant helps businesses optimize operations through sales forecasting, automated ordering, real-time product monitoring, and more.
           </div>
         </Question>
-        <Question title="Why did the chicken cross the road?">
+        <Question title="How does AI-generated sales forecasting work?">
           <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-            laboriosam neque reprehenderit saepe eius dolorum vel consequuntur
-            perspiciatis ad vero.
+          Our AI-generated sales forecasting tool analyzes historical data patterns to predict future sales, helping you strike the perfect balance between selling out early and avoiding excess inventory.
           </div>
         </Question>
-        <Question title="How many licks does it take to get to the center of a tootsie pop?">
+        <Question title="What is automated ordering and how can it benefit my business?">
           <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-            laboriosam neque reprehenderit saepe eius dolorum vel consequuntur
-            perspiciatis ad vero.
+          Automated ordering ensures you always have the products your customers want by automatically placing orders based on demand, either directly to your production facility or through your ordering platform.
           </div>
         </Question>
-        <Question title="Where's Waldo?">
+        <Question title="Can Keybolt help me monitor my product performance in real time?">
           <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-            laboriosam neque reprehenderit saepe eius dolorum vel consequuntur
-            perspiciatis ad vero.
+          Yes, our real-time product monitoring feature tracks sales, waste, and sold-out times for each individual product, giving you valuable insights into how your items are performing.
           </div>
         </Question>
       </div>
