@@ -164,18 +164,20 @@ type FeatureType = {
 const features: FeatureType[] = [
   {
     id: 1,
-    callout: "Sales Insights",
-    title: "Know Your Numbers!",
-    description: "Unlock powerful insights into your sales performance with our AI-generated forecasts. Understand trends, predict demand, and make informed decisions to boost your profitability.",
+    callout: "Inventory Management",
+    title: "Stay Stocked!",
+    description: "Never run out of key ingredients again. Our automated ordering system ensures your inventory levels are always optimal, reducing waste and ensuring you have what you need to meet customer demand.",
     contentPosition: "r",
     Images:imagesFeature.image1,
   },
   {
     id: 2,
-    callout: "Inventory Management",
-    title: "Stay Stocked!",
-    description: "Never run out of key ingredients again. Our automated ordering system ensures your inventory levels are always optimal, reducing waste and ensuring you have what you need to meet customer demand.",
+   
+    callout: "Group Recommendations",
+    title: "Perfect Dining Choices!",
+    description: "Find the ideal restaurant for any group with our Group Restaurant Finder. Consider everyone’s preferences to make dining decisions easy and enjoyable for everyone involved.",
     contentPosition: "l",
+    
     Images: imagesFeature.image2,
   },
   {
