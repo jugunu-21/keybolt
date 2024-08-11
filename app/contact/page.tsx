@@ -6,17 +6,7 @@ import { RoundedDrawerNav } from "../../components/navbar/roundedDrawerNav/round
 export default function Home() {
     return (
         <>
-            <div className="bg-neutral-950 ">
-                <RoundedDrawerNav
-                    links={links}
-                    navBackground="bg-neutral-950"
-                    bodyBackground="bg-white"
-                >
-                    <div className=" items-center justify-center">
-                        <div> <ShiftingContactForm /></div>
-                    </div>
-                </RoundedDrawerNav>
-            </div>
+            <ShiftingContactForm />
 
         </>
     )

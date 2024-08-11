@@ -60,9 +60,7 @@ import { AnimatePresence, motion } from "framer-motion";
                 </div>
                 <MobileLinks links={links} open={mobileNavOpen} />
             </nav>
-            <motion.main layout className={`${navBackground} px-2 pb-2`}>
-                <div className={`${bodyBackground} rounded-3xl`}>{children}</div>
-            </motion.main>
+           
         </>
     );
 };

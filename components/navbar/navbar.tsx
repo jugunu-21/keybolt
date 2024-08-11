@@ -1,4 +1,4 @@
-"use"
+"use client"
 import { links } from "@/public/navdata"
 import { RoundedDrawerNav } from "../navbar/roundedDrawerNav/roundedDrawerNav"
 import { NeuHero } from "../hero/hero";
@@ -10,11 +10,8 @@ export const RoundedDrawerNavExample = () => {
                 links={links}
                 navBackground="bg-neutral-950"
                 bodyBackground="bg-white"
-            >
-                <div className=" items-center justify-center">
-                    <div> < NeuHero /></div>
-                </div>
-            </RoundedDrawerNav>
+            />
+
         </div>
     );
 };
