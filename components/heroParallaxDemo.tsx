@@ -10,26 +10,26 @@ export const products = [
     title: "Moonbeam",
     link: "https://gomoonbeam.com",
     thumbnail:
-      "https://www.shutterstock.com/image-photo/business-growth-concept-picture-abstract-260nw-477860680.jpg",
+    "https://www.shutterstock.com/shutterstock/photos/2143567817/display_1500/stock-vector-business-teamwork-to-achieve-success-team-guidance-determination-and-motivation-concept-2143567817.jpg",
   },
   {
     title: "Cursor",
     link: "https://cursor.so",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cursor.png",
+    "https://www.shutterstock.com/shutterstock/photos/2417213449/display_1500/stock-vector-business-assistance-guidance-concept-businessman-looking-at-arrow-with-spotlight-shining-on-it-2417213449.jpg",
   },
   {
     title: "Rogue",
     link: "https://userogue.com",
     thumbnail:
-      "https://www.shutterstock.com/image-photo/business-growth-concept-picture-abstract-260nw-477860680.jpg",
+    "https://www.shutterstock.com/shutterstock/photos/2155027067/display_1500/stock-vector-business-recruitment-or-hiring-vector-concept-looking-for-talent-business-man-standing-in-2155027067.jpg",
   },
 
   {
     title: "Editorially",
     link: "https://editorially.org",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editorially.png",
+     " https://www.shutterstock.com/shutterstock/photos/1970078929/display_1500/stock-vector-conceptual-illustration-of-a-businessman-stands-on-the-edge-of-a-broken-bridge-and-its-divider-line-1970078929.jpg",
   },
   {
     title: "Editrix AI",
