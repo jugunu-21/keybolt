@@ -74,14 +74,14 @@ const HeaderBlock = () => (
       alt="avatar"
       className="mb-4 size-14 rounded-full"
     />
-    <h1 className="mb-12 text-4xl font-medium leading-tight">
-      Hi, I&apos;m Tom.{" "}
+    <h1 className="mb-12 text-3xl font-medium leading-tight">
+    Welcome to Keybolt.{" "}
       <span className="text-zinc-400">
-        I build cool websites like this one.
+      Ready to transform your business? Let's make it happen together!"
       </span>
     </h1>
     <a
-      href="#"
+      href="/contact"
       className="flex items-center gap-1 text-red-300 hover:underline"
     >
       Contact me <FiArrowRight />
@@ -151,13 +151,11 @@ const SocialsBlock = () => (
 );
 
 const AboutBlock = () => (
-  <Block className="col-span-12 text-3xl leading-snug">
+  <Block className="col-span-12 text-2xl leading-snug">
     <p>
-      My passion is building cool stuff.{" "}
+    From Passion to Purpose: Innovating with Keybolt.{" "}
       <span className="text-zinc-400">
-        I build primarily with React, Tailwind CSS, and Framer Motion. I love
-        this stack so much that I even built a website about it. I&apos;ve made over
-        a hundred videos on the subject across YouTube and TikTok.
+Keybolt is all about empowering local food businesses with cutting-edge technology. We specialize in AI-driven tools like sales forecasting, automated ordering, and real-time product monitoring. With Keybolt, you get powerful, practical solutions designed to drive success in the food industry.
       </span>
     </p>
   </Block>
