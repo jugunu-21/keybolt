@@ -77,7 +77,7 @@ const HeaderBlock = () => (
     <h1 className="mb-12 text-3xl font-medium leading-tight">
     Welcome to Keybolt.{" "}
       <span className="text-zinc-400">
-      Ready to transform your business? Let's make it happen together!"
+      Ready to transform your business? Let&lsquo;s make it happen together!&ldquo
       </span>
     </h1>
     <a
