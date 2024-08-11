@@ -10,7 +10,7 @@ const ShiftingContactForm = () => {
     <section className="p-4 bg-slate-100">
       <div className="w-full max-w-6xl mx-auto shadow-lg flex flex-col-reverse lg:flex-row rounded-lg overflow-hidden">
         <Form selected={selected} setSelected={setSelected} />
-        <Images selected={selected} />
+        <Imagess   selected={selected} />
       </div>
     </section>
   );
@@ -160,7 +160,7 @@ const FormSelect = ({
   );
 };
 
-const Images = ({ selected }: { selected: "company" | "individual" }) => {
+const Imagess = ({ selected }: { selected: "company" | "individual" }) => {
   return (
     <div className="bg-white relative overflow-hidden w-full min-h-[100px]">
       <motion.div

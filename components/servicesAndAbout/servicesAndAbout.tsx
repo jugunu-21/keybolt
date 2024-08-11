@@ -22,7 +22,7 @@ export const RevealBentoGrids = () => {
         <LocationBlock />
         <EmailListBlock />
       </motion.div>
-      <Footer />
+
     </div>
   );
 };
@@ -64,6 +64,7 @@ const Block = ({ className, ...rest }: BlockProps) => {
 const HeaderBlock = () => (
   <Block className="col-span-12 row-span-2 md:col-span-6">
     <Image
+    width={100} height={100}
       src="https://api.dicebear.com/8.x/lorelei-neutral/svg?seed=John"
       alt="avatar"
       className="mb-4 size-14 rounded-full"

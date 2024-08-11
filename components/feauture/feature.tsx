@@ -1,21 +1,23 @@
 import { motion, useInView } from "framer-motion";
+import Image from 'next/image';
 import { Dispatch, SetStateAction, useEffect, useRef, useState } from "react";
-import { IconType } from "react-icons";
-import { FiDollarSign, FiEye, FiPlay, FiSearch } from "react-icons/fi";
-
+// import { ImagesType } from "react-Imagess";
+// import { FiDollarSign, FiEye, FiPlay, FiSearch } from "react-Imagess/fi";
+import { imagesFeature } from "@/public/images/images";
+import { StaticImageData } from 'next/image';
 const FeatureShiftColumns = () => {
   return (
     <>
-      <div className="flex h-48 flex-col items-center justify-center bg-slate-900">
+      {/* <div className="flex h-48 flex-col items-center justify-center bg-slate-900">
         <span className="font-semibold uppercase text-white">Scroll down</span>
         <span className="mt-2 block rounded-full bg-indigo-600 px-4 py-1 text-center font-medium text-white md:hidden">
           Note: This is much cooler on desktop 😊
         </span>
-      </div>
+      </div> */}
       <SwapColumnFeatures />
-      <div className="flex h-48 items-center justify-center bg-indigo-600">
+      {/* <div className="flex h-48 items-center justify-center bg-indigo-600">
         <span className="font-semibold uppercase text-white">Scroll up</span>
-      </div>
+      </div> */}
     </>
   );
 };
@@ -130,7 +132,7 @@ const ExampleFeature = ({ featureInView }: { featureInView: FeatureType }) => {
         <div className="h-3 w-3 rounded-full bg-yellow-500" />
         <div className="h-3 w-3 rounded-full bg-green-500" />
       </div>
-      <div className="p-2">
+      {/* <div className="p-2">
         <p className="font-mono text-sm text-slate-200">
           <span className="text-green-300">~</span> Show a part of your product
           that explains what{" "}
@@ -139,16 +141,16 @@ const ExampleFeature = ({ featureInView }: { featureInView: FeatureType }) => {
           </span>{" "}
           means.
         </p>
+      </div> */}
+      <div className="relative h-96 w-full">
+        <Image src={featureInView.Images} alt="Description" layout="fill" objectFit="cover" />
       </div>
 
-      <span className="absolute left-[50%] top-[50%] -translate-x-[50%] -translate-y-[50%] text-9xl text-slate-700">
-        <featureInView.Icon />
-      </span>
     </div>
   );
 };
 
-export {FeatureShiftColumns };
+export { FeatureShiftColumns };
 
 type FeatureType = {
   id: number;
@@ -156,7 +158,7 @@ type FeatureType = {
   title: string;
   description: string;
   contentPosition: "l" | "r";
-  Icon: IconType;
+  Images: StaticImageData;
 };
 
 const features: FeatureType[] = [
@@ -167,7 +169,7 @@ const features: FeatureType[] = [
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor iusto quaerat qui, illo incidunt suscipit fugiat distinctio officia earum eius quae officiis quis harum animi.",
     contentPosition: "r",
-    Icon: FiEye,
+    Images:imagesFeature.image1,
   },
   {
     id: 2,
@@ -176,7 +178,7 @@ const features: FeatureType[] = [
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor iusto quaerat qui, illo incidunt suscipit fugiat distinctio officia earum eius quae officiis quis harum animi.",
     contentPosition: "l",
-    Icon: FiSearch,
+    Images: imagesFeature.image2,
   },
   {
     id: 3,
@@ -185,7 +187,7 @@ const features: FeatureType[] = [
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor iusto quaerat qui, illo incidunt suscipit fugiat distinctio officia earum eius quae officiis quis harum animi.",
     contentPosition: "r",
-    Icon: FiPlay,
+    Images:imagesFeature.image3,
   },
   {
     id: 4,
@@ -194,6 +196,6 @@ const features: FeatureType[] = [
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor iusto quaerat qui, illo incidunt suscipit fugiat distinctio officia earum eius quae officiis quis harum animi.",
     contentPosition: "l",
-    Icon: FiDollarSign,
+    Images:imagesFeature.image4,
   },
 ];

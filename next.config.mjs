@@ -14,7 +14,7 @@ const nextConfig = {
     fontOptimization: false,
   },
   images: {
-    domains: ['example.com', 'anotherdomain.com', 'aceternity.com','www.shutterstock.com'],
+    domains: ['example.com', 'anotherdomain.com', 'aceternity.com','www.shutterstock.com','c7.alamy.com','api.dicebear.com',],
   },
   // Existing configuration...
 };

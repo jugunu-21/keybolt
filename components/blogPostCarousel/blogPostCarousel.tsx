@@ -94,7 +94,7 @@ const BlogPostCarousel = () => {
   );
 };
 
-const Post = ({ imgUrl, author, title, description }: PostType) => {
+const Post = ({ imgUrl,  title, description }: PostType) => {
   return (
     <div
       className="relative shrink-0 cursor-pointer transition-transform hover:-translate-y-1"
@@ -104,13 +104,14 @@ const Post = ({ imgUrl, author, title, description }: PostType) => {
       }}
     >
       <Image
+      width={100} height={100}
         src={imgUrl}
         className="mb-3 h-[200px] w-full rounded-lg object-cover"
         alt={`An image for a fake blog post titled ${title}`}
       />
-      <span className="rounded-md border-[1px] border-neutral-500 px-1.5 py-1 text-xs uppercase text-neutral-500">
+      {/* <span className="rounded-md border-[1px] border-neutral-500 px-1.5 py-1 text-xs uppercase text-neutral-500">
         {author}
-      </span>
+      </span> */}
       <p className="mt-1.5 text-lg font-medium">{title}</p>
       <p className="text-sm text-neutral-500">{description}</p>
     </div>
@@ -122,7 +123,7 @@ export {BlogPostCarousel} ;
 type PostType = {
   id: number;
   imgUrl: string;
-  author: string;
+ 
   title: string;
   description: string;
 };
@@ -131,23 +132,23 @@ const posts: PostType[] = [
   {
     id: 1,
     imgUrl: "https://www.shutterstock.com/shutterstock/photos/1985332304/display_1500/stock-vector-team-success-and-improvement-sharing-same-business-goal-and-direction-support-and-partnership-for-1985332304.jpg",
-    author: "John Anderson",
+
     title: "We built an AI chess bot with ChatGPT",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
   },
   {
     id: 2,
-    imgUrl: "https://media.istockphoto.com/id/1155399377/photo/strategy-execution-success-concept.jpg?s=1024x1024&w=is&k=20&c=FeU0dmuCWWOImturRNPSFOGP-lGO6dM-YZs8vl4rUsc=",
-    author: "Kyle Parsons",
+    imgUrl: "https://www.shutterstock.com/shutterstock/photos/1985332304/display_1500/stock-vector-team-success-and-improvement-sharing-same-business-goal-and-direction-support-and-partnership-for-1985332304.jpg",
+  
     title: "How to grow your personal brand as a web designer",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
   },
   {
     id: 3,
-    imgUrl: "https://c7.alamy.com/comp/CW29A8/business-man-circling-graph-representing-growth-CW29A8.jpg",
-    author: "Andrea Bates",
+    imgUrl: "https://www.shutterstock.com/shutterstock/photos/1985332304/display_1500/stock-vector-team-success-and-improvement-sharing-same-business-goal-and-direction-support-and-partnership-for-1985332304.jpg",
+  
     title: "Calm down, monoliths are totally fine",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
@@ -155,7 +156,7 @@ const posts: PostType[] = [
   {
     id: 4,
     imgUrl: "https://c7.alamy.com/comp/GW2GT1/business-growth-finance-management-concept-GW2GT1.jpg",
-    author: "Jess Drum",
+
     title: "A quick guide to Framer Motion (for dummies)",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
@@ -163,7 +164,7 @@ const posts: PostType[] = [
   {
     id: 5,
     imgUrl: "/imgs/blog/5.png",
-    author: "Phil White",
+
     title: "You probably don't need kubernetes",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
@@ -171,7 +172,7 @@ const posts: PostType[] = [
   {
     id: 6,
     imgUrl: "/imgs/blog/6.png",
-    author: "Karen Peabody",
+
     title: "State of JavaScript in 2024",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
@@ -179,7 +180,7 @@ const posts: PostType[] = [
   {
     id: 7,
     imgUrl: "/imgs/blog/7.png",
-    author: "Dante Gordon",
+
     title: "What's new in Python?",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
