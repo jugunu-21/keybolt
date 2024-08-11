@@ -4,7 +4,7 @@ import { Dispatch, SetStateAction, useState } from "react";
 
 const ShiftingContactForm = () => {
   const [selected, setSelected] = useState<"company" | "individual">(
-    "individual"
+    "company"
   );
   return (
     <section className="p-4 bg-slate-100">
@@ -171,7 +171,7 @@ const Imagess = ({ selected }: { selected: "company" | "individual" }) => {
         transition={BASE_TRANSITION}
         className="absolute inset-0 bg-slate-200"
         style={{
-          backgroundImage: `url(/images/joinus.jpg)`,
+          backgroundImage: `url(/images/person.jpg)`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
