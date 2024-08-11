@@ -3,6 +3,7 @@ import { useState } from "react";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 import useMeasure from "react-use-measure";
 import { SparklesCore } from "../ui/sparkle";
+import Image from "next/image";
 const CARD_WIDTH = 350;
 const MARGIN = 20;
 const CARD_SIZE = CARD_WIDTH + MARGIN;
@@ -102,7 +103,7 @@ const Post = ({ imgUrl, author, title, description }: PostType) => {
         marginRight: MARGIN,
       }}
     >
-      <img
+      <Image
         src={imgUrl}
         className="mb-3 h-[200px] w-full rounded-lg object-cover"
         alt={`An image for a fake blog post titled ${title}`}

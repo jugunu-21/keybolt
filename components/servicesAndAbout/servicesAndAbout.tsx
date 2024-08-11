@@ -3,7 +3,7 @@ import { MotionProps, motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
 import { FiArrowRight, FiMail, FiMapPin } from "react-icons/fi";
 import { SiGithub, SiTiktok, SiTwitter, SiYoutube } from "react-icons/si";
-
+import Image from "next/image";
 export const RevealBentoGrids = () => {
   return (
     <div className="min-h-screen bg-zinc-900 px-4 py-12 text-zinc-50">
@@ -63,13 +63,13 @@ const Block = ({ className, ...rest }: BlockProps) => {
 
 const HeaderBlock = () => (
   <Block className="col-span-12 row-span-2 md:col-span-6">
-    <img
+    <Image
       src="https://api.dicebear.com/8.x/lorelei-neutral/svg?seed=John"
       alt="avatar"
       className="mb-4 size-14 rounded-full"
     />
     <h1 className="mb-12 text-4xl font-medium leading-tight">
-      Hi, I'm Tom.{" "}
+      Hi, I&apos;m Tom.{" "}
       <span className="text-zinc-400">
         I build cool websites like this one.
       </span>
@@ -150,7 +150,7 @@ const AboutBlock = () => (
       My passion is building cool stuff.{" "}
       <span className="text-zinc-400">
         I build primarily with React, Tailwind CSS, and Framer Motion. I love
-        this stack so much that I even built a website about it. I've made over
+        this stack so much that I even built a website about it. I&apos;ve made over
         a hundred videos on the subject across YouTube and TikTok.
       </span>
     </p>

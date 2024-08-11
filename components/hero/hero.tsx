@@ -15,7 +15,7 @@
 //               className="relative shrink-0 cursor-pointer transition-transform hover:-translate-y-1"
              
 //             >
-//               <img
+//               <Image
 //                 src="https://techcrunch.com/wp-content/uploads/2015/07/growth.jpg"
 //                 className="mb-3 h-[250px] w-full rounded-lg object-cover"
 //                 alt="An image for a fake blog post titled"
@@ -52,6 +52,7 @@
 // }
 
 import React from "react";
+import Image from "next/image";
 import { FiArrowUpRight } from "react-icons/fi";
 import {
   FiBell,
@@ -112,7 +113,7 @@ const Copy = () => {
             HEY!
           </span>
           <span className="ml-1.5 mr-1 inline-block">
-            We're live on Product Hunt!
+            We&apos;re live on Product Hunt!
           </span>
           <FiArrowUpRight className="mr-2 inline-block" />
         </a>
@@ -122,7 +123,7 @@ const Copy = () => {
       </h1>
       <p className="mx-auto my-4 max-w-3xl text-center text-base leading-relaxed md:my-6 md:text-xl md:leading-relaxed">
         Your 1-2 sentence elevator pitch for what your product does and why goes
-        here. Be concise, get to the point, don't use jargon.
+        here. Be concise, get to the point, don&apos;t use jargon.
       </p>
       <button className="rounded-lg bg-indigo-600 p-3 uppercase text-white transition-colors hover:bg-indigo-700">
         <span className="font-bold">Get started - </span> no CC required

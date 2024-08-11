@@ -1,6 +1,7 @@
 "use client"
 import React from "react";
 import Newsletter from "./newsletter/newsletter";
+import Image from "next/image";
 export default function Footer() {
   return (
     <div>
@@ -196,12 +197,12 @@ const FooterLast=()=>{
 //       <div className="flex space-x-4 pt-10">
        
 //         <div className=" md:flex items-center">
-//           <img
+//           <Image
 //             className="object-contain h-10"
 //             src="https://logos-download.com/wp-content/uploads/2016/06/Download_on_the_App_Store_logo.png"
 //             alt="App Store Logo"
 //           />
-//           <img
+//           <Image
 //             className="object-contain h-10"
 //             src="https://i1.wp.com/www.oispice.com/wp-content/uploads/2020/07/Google-Play-Store-app.jpg?fit=1200%2C675&ssl=1"
 //             alt="Google Play Store Logo"
@@ -214,7 +215,7 @@ const FooterLast=()=>{
 //   </div>
 //   {/* <div>follow us on</div>
 //         <div className="flex">
-//             <img src="" alt="" /><img src="" alt="" /><img src="" alt="" /><img src="" alt="" />
+//             <Image src="" alt="" /><Image src="" alt="" /><Image src="" alt="" /><Image src="" alt="" />
 //         </div> */}
 // </div>
 // {/* <div className="pl-6 pt-4 pb-10">© 2023-2024 keybolt.com </div> */}
