@@ -19,9 +19,7 @@ const StackedCardTestimonials = () => {
       <div className="p-4">
         <h3 className="text-5xl font-semibold">What our customers think</h3>
         <p className="text-slate-500 my-4">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus
-          commodi sint, similique cupiditate possimus suscipit delectus illum
-          eos iure magnam!
+        Our customers rave about the impact Keybolt has had on their businesses. They appreciate how our AI-driven tools simplify complex tasks, enhance operational efficiency, and deliver actionable insights. From optimizing inventory to streamlining ordering processes, Keybolt is praised for making sophisticated technology accessible and effective for food businesses of all sizes.
         </p>
         <SelectBtns
           numTracks={testimonials.length}
@@ -178,44 +176,38 @@ interface Testimonial {
 const testimonials = [
   {
     Icon: SiNike,
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita sequi cupiditate harum repellendus ipsum dignissimos? Officiis ipsam dolorum magnam assumenda.",
-    name: "Jane Dodson",
-    title: "Marketing Director, Nike",
+    description: "The real-time product monitoring feature has been a game-changer for us. We now have a clear understanding of what’s selling and what’s not, leading to more informed decisions and less waste.",
+    name: "Liam Johnson",
+   title: "Manager, The Green Cafe"
   },
   {
     Icon: SiAtlassian,
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita sequi cupiditate harum repellendus ipsum dignissimos? Officiis ipsam dolorum magnam assumenda.",
-    name: "Johnathan Rodriguez",
-    title: "UX Research, Atlassian",
+   description: "Keybolt has completely transformed how we manage our restaurant operations. The AI tools are incredibly intuitive and have streamlined our processes, allowing us to focus more on our customers and less on manual tasks.",
+  name: "Sophia Martinez",
+ title: "Owner, Bella Italia"
   },
   {
     Icon: SiDribbble,
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita sequi cupiditate harum repellendus ipsum dignissimos? Officiis ipsam dolorum magnam assumenda.",
-    name: "Phil Heath",
-    title: "Staff Engineer, Dribbble",
+    description: "Keybolt’s automated ordering system has saved us countless hours and ensured we never run out of stock. It’s like having an extra team member dedicated to managing our inventory.",
+    name: "Emma Williams",
+   title: "Co-owner, Daily Delights"
   },
   {
     Icon: SiGrubhub,
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita sequi cupiditate harum repellendus ipsum dignissimos? Officiis ipsam dolorum magnam assumenda.",
-    name: "Andrea Beck",
-    title: "Marketing Manager, GrubHub",
+    description: "The AI-generated sales forecasts are spot on and have helped us optimize our inventory levels perfectly. Keybolt’s technology is a must-have for any food business looking to grow.",
+    name: "James Brown",
+   title: "Head Chef, Gourmet Bistro"
   },
   {
     Icon: SiKaggle,
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita sequi cupiditate harum repellendus ipsum dignissimos? Officiis ipsam dolorum magnam assumenda.",
-    name: "Daniel Henderson",
-    title: "Engineering Manager, Kaggle",
+    description: "I'm amazed at how Keybolt has simplified our operations. From sales tracking to group restaurant recommendations, their tools are easy to use and incredibly effective.",
+  name: "Olivia Davis",
+ title: "Owner, Farmhouse Eatery"
   },
   {
     Icon: SiSlack,
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita sequi cupiditate harum repellendus ipsum dignissimos? Officiis ipsam dolorum magnam assumenda.",
-    name: "Anderson Lima",
-    title: "Product Manager, Slack",
+    description: "Keybolt has revolutionized the way we manage our food business. The group restaurant finder feature has made planning group outings effortless, and the efficiency of their AI tools is unmatched.",
+    name: "Michael Green",
+   title: "Founder, Urban Eats"
   },
 ];
