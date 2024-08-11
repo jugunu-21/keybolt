@@ -39,7 +39,7 @@ export default function Newsletter() {
                 </svg>
               </div>
               <dt className="mt-4 font-semibold ">Weekly articles</dt>
-              <dd className="mt-2 leading-7 text-gray-900">Non laboris consequat cupidatat laborum magna. Eiusmod non irure cupidatat duis commodo amet.</dd>
+              <dd className="mt-2 leading-7 text-gray-900">Explore insights and strategies for optimizing your food business. Our weekly articles cover everything from leveraging AI for accurate sales forecasting to tips on automating your ordering process.</dd>
             </div>
             <div className="flex flex-col items-start">
               <div className="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
@@ -48,7 +48,7 @@ export default function Newsletter() {
                 </svg>
               </div>
               <dt className="mt-4 font-semibold ">No spam</dt>
-              <dd className="mt-2 leading-7 text-gray-900">Officia excepteur ullamco ut sint duis proident non adipisicing. Voluptate incididunt anim.</dd>
+              <dd className="mt-2 leading-7 text-gray-900">At Keybolt, we respect your inbox. Expect only valuable insights, tips, and updates on how our tools can help your food business thrive.</dd>
             </div>
           </dl>
         </div>
