@@ -10,58 +10,38 @@ export const products = [
     title: "Moonbeam",
     link: "https://gomoonbeam.com",
     thumbnail:
-    "https://www.shutterstock.com/shutterstock/photos/2143567817/display_1500/stock-vector-business-teamwork-to-achieve-success-team-guidance-determination-and-motivation-concept-2143567817.jpg",
+    "/images/prog1.jpg",
   },
   {
     title: "Cursor",
     link: "https://cursor.so",
     thumbnail:
-    "https://www.shutterstock.com/shutterstock/photos/2417213449/display_1500/stock-vector-business-assistance-guidance-concept-businessman-looking-at-arrow-with-spotlight-shining-on-it-2417213449.jpg",
+    "/images/prog2.jpg",
   },
   {
     title: "Rogue",
     link: "https://userogue.com",
     thumbnail:
-    "https://www.shutterstock.com/shutterstock/photos/2155027067/display_1500/stock-vector-business-recruitment-or-hiring-vector-concept-looking-for-talent-business-man-standing-in-2155027067.jpg",
+    "/images/prog3.jpg",
   },
 
   {
     title: "Editorially",
     link: "https://editorially.org",
     thumbnail:
-     " https://www.shutterstock.com/shutterstock/photos/1970078929/display_1500/stock-vector-conceptual-illustration-of-a-businessman-stands-on-the-edge-of-a-broken-bridge-and-its-divider-line-1970078929.jpg",
+    "/images/prog4.jpg",
   },
   {
     title: "Editrix AI",
     link: "https://editrix.ai",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editrix.png",
-  },
-  {
-    title: "Pixel Perfect",
-    link: "https://app.pixelperfect.quest",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/pixelperfect.png",
+    "/images/prog5.jpg",
   },
 
-  {
-    title: "Algochurn",
-    link: "https://algochurn.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/algochurn.png",
-  },
-  {
-    title: "Aceternity UI",
-    link: "https://ui.aceternity.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/aceternityui.png",
-  },
-  {
-    title: "Tailwind Master Kit",
-    link: "https://tailwindmasterkit.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png",
-  },
+
+ 
+ 
+ 
   // {
   //   title: "SmartBridge",
   //   link: "https://smartbridgetech.com",
