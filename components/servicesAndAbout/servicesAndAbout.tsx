@@ -4,7 +4,7 @@ import { twMerge } from "tailwind-merge";
 import { FiArrowRight, FiMail, FiMapPin } from "react-icons/fi";
 import { SiGithub, SiTiktok, SiTwitter, SiYoutube } from "react-icons/si";
 
-export const RevealBento = () => {
+export const RevealBentoGrids = () => {
   return (
     <div className="min-h-screen bg-zinc-900 px-4 py-12 text-zinc-50">
       <Logo />

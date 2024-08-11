@@ -101,11 +101,11 @@ const FooterLast=()=>{
     </div>
   </div> */}
   <div className="bg-gray-100">
-    <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-      <p className="text-gray-500 text-sm text-center sm:text-left">© 2020 Tailblocks —
-        <a href="https://twitter.com/knyttneve" className="text-gray-600 ml-1" target="_blank" rel="noopener noreferrer">@knyttneve</a>
+    <div className="container mx-auto text-zinc-600 py-4 px-5 flex flex-wrap flex-col space-x-6 sm:flex-row">
+      <p className=" text-sm text-center sm:text-left">© 2020 Tailblocks —
+        <a href="https://twitter.com/knyttneve" className=" ml-1" target="_blank" rel="noopener noreferrer">@knyttneve</a>
       </p>
-      <span className="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto">
+      <span className="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center  md:justify-start md:w-auto">
         <a className="text-gray-500">
           <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5" viewBox="0 0 24 24">
             <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
@@ -129,7 +129,13 @@ const FooterLast=()=>{
           </svg>
         </a>
       </span>
-      <span className="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-500 text-sm">Enamel pin tousled raclette tacos irony</span>
+      <p className=" px-2 text-center ">
+        Made with ❤️ by{" "}
+        <a href="#" className=" hover:underline">
+          @tomisloading
+        </a>
+      </p>
+     
     </div>
   </div>
 </footer>)}

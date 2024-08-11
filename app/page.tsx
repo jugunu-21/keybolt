@@ -7,18 +7,18 @@ import {BlogPostCarousel} from "../components/blogPostCarousel/blogPostCarousel"
 import {SparklesPreview} from "../components/sparkelPreview/sparkelPreview"
 import {BasicFAQ} from "../components/faq/faq"
 import {ShiftingContactForm} from "../components/contact/contact"
-import {RevealBento} from "../components/servicesAndAbout/servicesAndAbout"
-import { Feature } from "@/components/feauture/feature";
+import {RevealBentoGrids} from "../components/servicesAndAbout/servicesAndAbout"
+import { FeatureShiftColumns} from "@/components/feauture/feature";
 export default function Home() {
   return (
     <main>
       <RoundedDrawerNavExample />
       <ImagePartion />
-      <Feature/>
+      <FeatureShiftColumns/>
       <SparklesPreview/>
       <BlogPostCarousel/>
       <HeroParallaxDemo />
-      <RevealBento/>
+      <RevealBentoGrids/>
       <ShiftingContactForm/>
       <BasicFAQ/>
     </main>

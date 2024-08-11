@@ -3,7 +3,7 @@ import { Dispatch, SetStateAction, useEffect, useRef, useState } from "react";
 import { IconType } from "react-icons";
 import { FiDollarSign, FiEye, FiPlay, FiSearch } from "react-icons/fi";
 
-const Feature = () => {
+const FeatureShiftColumns = () => {
   return (
     <>
       <div className="flex h-48 flex-col items-center justify-center bg-slate-900">
@@ -148,7 +148,7 @@ const ExampleFeature = ({ featureInView }: { featureInView: FeatureType }) => {
   );
 };
 
-export {Feature };
+export {FeatureShiftColumns };
 
 type FeatureType = {
   id: number;
