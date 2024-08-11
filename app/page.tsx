@@ -16,7 +16,7 @@ import { NeuHero } from "../components/hero/hero";
 export default function Home() {
 
   return (
-    <main>
+    <main className="bg-red-400 ">
 
       <NeuHero />
       {/* <ImagePartion /> */}

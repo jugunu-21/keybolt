@@ -13,7 +13,7 @@
 //           <div className="text-center md:flex space-x-8">
 //             <div
 //               className="relative shrink-0 cursor-pointer transition-transform hover:-translate-y-1"
-             
+
 //             >
 //               <Image
 //                 src="https://techcrunch.com/wp-content/uploads/2015/07/growth.jpg"
@@ -26,7 +26,7 @@
 //               <p className="mt-1.5 text-lg font-medium">Maximize Efficiency</p>
 //               <p className="text-sm text-neutral-500">Explore how our AI-driven solutions can reduce waste and boost profits.</p>
 //             </div>
-          
+
 //             <div className="text-center">
 //               <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Optimize and Grow <br />Your Business  with us</h1>
 //               <p className="mt-6 text-lg leading-8 text-gray-600">Keybolt empowers local food businesses by offering advanced AI tools and automated solutions. Our platform ensures that your operations run smoothly, allowing you to focus on what you do best—serving great food.</p>
@@ -53,15 +53,26 @@
 
 import React from "react";
 import Image from "next/image";
-import { FiArrowUpRight } from "react-icons/fi";
+import { FiArrowUpRight, FiBell, FiCheck, FiChevronDown, FiList, FiMessageCircle, FiUser } from "react-icons/fi";
 import {
-  FiBell,
-  FiCheck,
-  FiChevronDown,
-  FiList,
-  FiMessageCircle,
-  FiUser,
-} from "react-icons/fi";
+  FaHotdog,
+  FaDrumstickBite,
+  FaLemon ,
+  FaUtensils ,
+  FaBacon ,
+  FaCheese,
+  FaCocktail, 
+  FaApple,
+  FaStar,
+  FaBeer,
+  FaHamburger,
+  FaPizzaSlice,
+  FaCoffee,
+  FaIceCream,
+  FaCookie,
+  FaWineBottle,
+  FaCarrot
+} from "react-icons/fa";
 import { motion } from "framer-motion";
 import {
   SiNike,
@@ -118,12 +129,12 @@ const Copy = () => {
           <FiArrowUpRight className="mr-2 inline-block" />
         </a>
       </div>
-      <h1 className="max-w-4xl text-center text-4xl font-black leading-[1.15] md:text-6xl md:leading-[1.15]">
-        Launch your product with a cool landing page
+      <h1 className="max-w-4xl text-center text-3xl font-black leading-[1.15] md:text-5xl md:leading-[1.15]">
+        Empowering <br /> Food Businesses with  AI
       </h1>
       <p className="mx-auto my-4 max-w-3xl text-center text-base leading-relaxed md:my-6 md:text-xl md:leading-relaxed">
-        Your 1-2 sentence elevator pitch for what your product does and why goes
-        here. Be concise, get to the point, don&apos;t use jargon.
+
+        To empowers local food businesses,Keybolt uses AI-driven tools that streamline operations and boost efficiency, within reach for every entrepreneur.
       </p>
       <button className="rounded-lg bg-indigo-600 p-3 uppercase text-white transition-colors hover:bg-indigo-700">
         <span className="font-bold">Get started - </span> no CC required
@@ -142,7 +153,7 @@ const MockupScreen = () => {
           <span className="size-2 rounded-full bg-green-400" />
         </div>
         <span className="rounded bg-zinc-600 px-2 py-0.5 text-xs text-zinc-100">
-          your-website.com
+          keybolt.vercel.app
         </span>
         <FiChevronDown className="text-white" />
       </div>
@@ -271,30 +282,31 @@ const LogoItem = ({ Icon, name }: { Icon: IconType; name: string }) => {
 
 const LogoItemsTop = () => (
   <>
-    <LogoItem Icon={SiNike} name="Nike" />
-    <LogoItem Icon={Si3M} name="3M" />
-    <LogoItem Icon={SiAbstract} name="Abstract" />
-    <LogoItem Icon={SiAdobe} name="Adobe" />
-    <LogoItem Icon={SiAirtable} name="Airtable" />
-    <LogoItem Icon={SiAmazon} name="Amazon" />
-    <LogoItem Icon={SiBox} name="Box" />
-    <LogoItem Icon={SiBytedance} name="Bytedance" />
-    <LogoItem Icon={SiChase} name="Chase" />
-    <LogoItem Icon={SiCloudbees} name="Cloudebees" />
+
+    <LogoItem Icon={FaApple} name="Apple" />
+    <LogoItem Icon={FaStar} name=" Starbucks" />
+    <LogoItem Icon={FaBeer} name=" beer brands" />
+    <LogoItem Icon={FaHamburger} name=" McDonald's" />
+    <LogoItem Icon={FaPizzaSlice} name=" Domino’s" />
+    <LogoItem Icon={FaCoffee} name=" Starbucks" />
+    <LogoItem Icon={FaIceCream} name=" Baskin-Robbins " />
+    <LogoItem Icon={FaCookie} name=" Famous Amos" />
+    <LogoItem Icon={FaWineBottle} name=" Wine brands (general)" />
+    <LogoItem Icon={FaCarrot} name=" Trader Joe's " />
   </>
 );
 
 const LogoItemsBottom = () => (
   <>
-    <LogoItem Icon={SiBmw} name="BMW" />
-    <LogoItem Icon={SiBurton} name="Burton" />
-    <LogoItem Icon={SiBuildkite} name="Buildkite" />
-    <LogoItem Icon={SiCouchbase} name="Couchbase" />
-    <LogoItem Icon={SiDailymotion} name="Dailymotion" />
-    <LogoItem Icon={SiDeliveroo} name="deliveroo" />
-    <LogoItem Icon={SiEpicgames} name="Epic Games" />
-    <LogoItem Icon={SiGenius} name="Genius" />
-    <LogoItem Icon={SiGodaddy} name="GoDaddy" />
-    <LogoItem Icon={SiHeroku} name="Heroku" />
+   <LogoItem Icon={FaApple} name="Apple" />
+    <LogoItem Icon={FaStar} name=" Starbucks" />
+    <LogoItem Icon={FaBeer} name=" beer brands" />
+    <LogoItem Icon={FaHamburger} name=" McDonald's" />
+    <LogoItem Icon={FaPizzaSlice} name=" Domino’s" />
+    <LogoItem Icon={FaCoffee} name=" Starbucks" />
+    <LogoItem Icon={FaIceCream} name=" Baskin-Robbins " />
+    <LogoItem Icon={FaCookie} name=" Famous Amos" />
+    <LogoItem Icon={FaWineBottle} name=" Wine brands (general)" />
+    <LogoItem Icon={FaCarrot} name=" Trader Joe's " />
   </>
 );
