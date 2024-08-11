@@ -3,6 +3,11 @@ import { MotionProps, motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
 import { FiArrowRight, FiMail, FiMapPin } from "react-icons/fi";
 import { SiGithub, SiTiktok, SiTwitter, SiYoutube } from "react-icons/si";
+import { GrBusinessService } from "react-icons/gr";
+import { RiCustomerServiceFill } from "react-icons/ri";
+import { GiArtificialIntelligence } from "react-icons/gi";
+import { FaHandHoldingUsd } from "react-icons/fa";
+import { VscWorkspaceTrusted } from "react-icons/vsc";
 import Image from "next/image";
 export const RevealBentoGrids = () => {
   return (
@@ -65,7 +70,7 @@ const HeaderBlock = () => (
   <Block className="col-span-12 row-span-2 md:col-span-6">
     <Image
     width={100} height={100}
-      src="https://api.dicebear.com/8.x/lorelei-neutral/svg?seed=John"
+      src="/images/moneygraph.jpg"
       alt="avatar"
       className="mb-4 size-14 rounded-full"
     />
@@ -95,9 +100,9 @@ const SocialsBlock = () => (
     >
       <a
         href="#"
-        className="grid h-full place-content-center text-3xl text-white"
+        className="grid h-full place-content-center text-5xl text-white"
       >
-        <SiYoutube />
+        < RiCustomerServiceFill  />
       </a>
     </Block>
     <Block
@@ -109,9 +114,9 @@ const SocialsBlock = () => (
     >
       <a
         href="#"
-        className="grid h-full place-content-center text-3xl text-white"
+        className="grid h-full place-content-center text-5xl text-white"
       >
-        <SiGithub />
+        <GiArtificialIntelligence />
       </a>
     </Block>
     <Block
@@ -123,9 +128,9 @@ const SocialsBlock = () => (
     >
       <a
         href="#"
-        className="grid h-full place-content-center text-3xl text-black"
+        className="grid h-full place-content-center text-5xl text-black"
       >
-        <SiTiktok />
+        <FaHandHoldingUsd/>
       </a>
     </Block>
     <Block
@@ -137,9 +142,9 @@ const SocialsBlock = () => (
     >
       <a
         href="#"
-        className="grid h-full place-content-center text-3xl text-white"
+        className="grid h-full place-content-center text-5xl text-white"
       >
-        <SiTwitter />
+        <VscWorkspaceTrusted/>
       </a>
     </Block>
   </>

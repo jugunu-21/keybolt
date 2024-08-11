@@ -12,32 +12,32 @@ function BasicFAQ  () {
           Frequently asked questions
         </h3>
         <Question title="Why is the sky blue?" defaultOpen>
-          <p>
+          <div>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
             laboriosam neque reprehenderit saepe eius dolorum vel consequuntur
             perspiciatis ad vero.
-          </p>
+          </div>
         </Question>
         <Question title="Why did the chicken cross the road?">
-          <p>
+          <div>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
             laboriosam neque reprehenderit saepe eius dolorum vel consequuntur
             perspiciatis ad vero.
-          </p>
+          </div>
         </Question>
         <Question title="How many licks does it take to get to the center of a tootsie pop?">
-          <p>
+          <div>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
             laboriosam neque reprehenderit saepe eius dolorum vel consequuntur
             perspiciatis ad vero.
-          </p>
+          </div>
         </Question>
         <Question title="Where's Waldo?">
-          <p>
+          <div>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
             laboriosam neque reprehenderit saepe eius dolorum vel consequuntur
             perspiciatis ad vero.
-          </p>
+          </div>
         </Question>
       </div>
     </div>
@@ -101,7 +101,7 @@ const Question = ({
         }}
         className="overflow-hidden text-slate-600"
       >
-        <p ref={ref}>{children}</p>
+        <div ref={ref}>{children}</div>
       </motion.div>
     </motion.div>
   );
