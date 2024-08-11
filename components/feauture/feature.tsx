@@ -164,37 +164,33 @@ type FeatureType = {
 const features: FeatureType[] = [
   {
     id: 1,
-    callout: "Get noticed",
-    title: "It's simple",
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor iusto quaerat qui, illo incidunt suscipit fugiat distinctio officia earum eius quae officiis quis harum animi.",
+    callout: "Sales Insights",
+    title: "Know Your Numbers!",
+    description: "Unlock powerful insights into your sales performance with our AI-generated forecasts. Understand trends, predict demand, and make informed decisions to boost your profitability.",
     contentPosition: "r",
     Images:imagesFeature.image1,
   },
   {
     id: 2,
-    callout: "Find people",
-    title: "They're all here",
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor iusto quaerat qui, illo incidunt suscipit fugiat distinctio officia earum eius quae officiis quis harum animi.",
+    callout: "Inventory Management",
+    title: "Stay Stocked!",
+    description: "Never run out of key ingredients again. Our automated ordering system ensures your inventory levels are always optimal, reducing waste and ensuring you have what you need to meet customer demand.",
     contentPosition: "l",
     Images: imagesFeature.image2,
   },
   {
     id: 3,
-    callout: "Have fun",
-    title: "Let's party",
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor iusto quaerat qui, illo incidunt suscipit fugiat distinctio officia earum eius quae officiis quis harum animi.",
+    callout: "Performance Tracking",
+    title: "Real-Time Analytics!",
+    description: "Track how your products are performing in real time. Monitor sales, waste, and stock levels to quickly adapt and improve your operations based on actual data.",
     contentPosition: "r",
     Images:imagesFeature.image3,
   },
   {
     id: 4,
-    callout: "Get paid",
-    title: "Cha-ching!",
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor iusto quaerat qui, illo incidunt suscipit fugiat distinctio officia earum eius quae officiis quis harum animi.",
+    callout: "Optimize Operations",
+    title: "Streamline Your Business!",
+    description: "Transform your food business with Keybolt's advanced AI-driven tools. From precise sales forecasts and automated ordering to real-time product tracking, our solutions are designed to help you maximize efficiency and minimize waste. Empower your business with technology that grows with you.",
     contentPosition: "l",
     Images:imagesFeature.image4,
   },
