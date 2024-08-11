@@ -3,13 +3,13 @@ import { SparklesCore } from "../ui/sparkle";
 
  function SparklesPreview() {
     return (
-      <div className="h-[40rem] w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
-        <div className="flex flex-row text-red-900">
+      <div className="h-[40rem] w-full flex flex-col items-center justify-center overflow-hidden rounded-md">
+        <div className="flex flex-row">
         <Image className="w-10" src="/path/to/your/image.jpg" alt="Description" width={100} height={100}></Image>
         <Image className="w-10" src="/path/to/your/image.jpg" alt="Description" width={100} height={100}></Image>
         <Image className="w-10" src="/path/to/your/image.jpg" alt="Description" width={100} height={100}></Image>
         </div>
-        <h1 className="md:text-5xl text-3xl lg:text-7xl font-bold text-center text-white relative z-20">
+        <h1 className="md:text-5xl  text-gray-800 text-3xl lg:text-7xl font-bold text-centerrelative z-20">
          KEYBOLT
         </h1>
         <div className="w-[40rem] h-40 relative">
@@ -30,7 +30,7 @@ import { SparklesCore } from "../ui/sparkle";
           />
   
           {/* Radial Gradient to prevent sharp edges */}
-          <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
+          <div className="absolute inset-0 w-full h-full [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
         </div>
         <div className="absolute text-3xl text-stone-600 text-center px-8 pt-16">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis iusto nulla culpa, adipisci quo, dolorem nihil es</div>
       </div>

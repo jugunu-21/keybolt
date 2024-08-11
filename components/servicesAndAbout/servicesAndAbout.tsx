@@ -11,7 +11,7 @@ import { VscWorkspaceTrusted } from "react-icons/vsc";
 import Image from "next/image";
 export const RevealBentoGrids = () => {
   return (
-    <div className="min-h-screen bg-zinc-900 px-4 py-12 text-zinc-50">
+    <div className="min-h-screen px-4 py-12 text-zinc-50">
       <Logo />
       <motion.div
         initial="initial"
@@ -124,7 +124,7 @@ const SocialsBlock = () => (
         rotate: "-2.5deg",
         scale: 1.1,
       }}
-      className="col-span-6 bg-zinc-50 md:col-span-3"
+      className="col-span-6 bg-yellow-300 md:col-span-3"
     >
       <a
         href="#"

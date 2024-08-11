@@ -9,17 +9,22 @@ import {BasicFAQ} from "../components/faq/faq"
 import {ShiftingContactForm} from "../components/contact/contact"
 import {RevealBentoGrids} from "../components/servicesAndAbout/servicesAndAbout"
 import { FeatureShiftColumns} from "@/components/feauture/feature";
+import {StackedCardTestimonials} from "../components/testimonials/testimonials"
+// import { useRouter } from "next/navigation"
+// const router =useRouter()
 export default function Home() {
+
   return (
     <main>
-      <RoundedDrawerNavExample />
+    <RoundedDrawerNavExample />
       {/* <ImagePartion /> */}
       <FeatureShiftColumns/>
-      <SparklesPreview/>
-      <BlogPostCarousel/>
-      <HeroParallaxDemo />
+      {/* <SparklesPreview/> */}
+      {/* <BlogPostCarousel/> */}
+      {/* <HeroParallaxDemo /> */}
+      <StackedCardTestimonials/>
       <RevealBentoGrids/>
-      <ShiftingContactForm/>
+      {/* <ShiftingContactForm/> */}
       <BasicFAQ/>
     </main>
   );
