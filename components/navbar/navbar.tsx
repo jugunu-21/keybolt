@@ -1,7 +1,7 @@
 
-import {links} from "@/public/navdata"
-import {RoundedDrawerNav} from "../navbar/roundedDrawerNav/roundedDrawerNav"
-import { Hero } from "../hero/hero";
+import { links } from "@/public/navdata"
+import { RoundedDrawerNav } from "../navbar/roundedDrawerNav/roundedDrawerNav"
+import { NeuHero } from "../hero/hero";
 export const RoundedDrawerNavExample = () => {
 
     return (
@@ -11,10 +11,10 @@ export const RoundedDrawerNavExample = () => {
                 navBackground="bg-neutral-950"
                 bodyBackground="bg-white"
             >
-                <div className="flex flex-col items-center justify-center">
-                    <div> <Hero/></div>
-                   
-                   
+                <div className=" items-center justify-center">
+                    <div> < NeuHero /></div>
+
+
                 </div>
             </RoundedDrawerNav>
         </div>
