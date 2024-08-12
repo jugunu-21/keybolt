@@ -126,7 +126,7 @@ const Content = ({
 
 const ExampleFeature = ({ featureInView }: { featureInView: FeatureType }) => {
   return (
-    <div className="relative h-96 w-full rounded-xl bg-slate-800 shadow-xl">
+    <div className="relative h-90 w-full rounded-xl bg-slate-800 shadow-xl">
       <div className="flex w-full gap-1.5 rounded-t-xl bg-slate-900 p-3">
         <div className="h-3 w-3 rounded-full bg-red-500" />
         <div className="h-3 w-3 rounded-full bg-yellow-500" />
@@ -142,7 +142,7 @@ const ExampleFeature = ({ featureInView }: { featureInView: FeatureType }) => {
           means.
         </p>
       </div> */}
-      <div className="relative h-96 w-full">
+      <div className="relative h-80 w-full">
         <Image src={featureInView.svg} alt="Description" layout="fill" objectFit="cover" />
       </div>
 
