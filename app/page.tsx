@@ -11,6 +11,7 @@ import { RevealBentoGrids } from "../components/servicesAndAbout/servicesAndAbou
 import { FeatureShiftColumns } from "@/components/feauture/feature";
 import { StackedCardTestimonials } from "../components/testimonials/testimonials"
 import { NeuHero } from "../components/hero/hero";
+import Section from "@/components/dataSection/dataSection";
 // import { useRouter } from "next/navigation"
 // const router =useRouter()
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
       <FeatureShiftColumns />
       {/* <SparklesPreview/> */}
       {/* <BlogPostCarousel/> */}
+      <Section/>
       {/* <HeroParallaxDemo /> */}
       <StackedCardTestimonials />
       <RevealBentoGrids />

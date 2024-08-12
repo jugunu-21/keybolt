@@ -9,7 +9,7 @@ import {
 } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-
+import Section from "../dataSection/dataSection";
 export const HeroParallax = ({
   products,
 }: {
@@ -57,9 +57,11 @@ export const HeroParallax = ({
   return (
     <div
       ref={ref}
-      className="h-[170vh] lg:h-[190vh] py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className=" h-[190vh]  overflow-hidden py-10 antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
       <Header />
+      
+    
       <motion.div
         style={{
           rotateX,
@@ -67,9 +69,9 @@ export const HeroParallax = ({
           translateY,
           opacity,
         }}
-        className=""
+       className="flex flex-row-reverse space-x-reverse space-x-20 mb-10"
       >
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
+
           {firstRow.map((product) => (
             <ProductCard
               product={product}
@@ -77,25 +79,8 @@ export const HeroParallax = ({
               key={product.title}
             />
           ))}
-        </motion.div>
-        {/* <motion.div className="flex flex-row  mb-20 space-x-20 ">
-          {secondRow.map((product) => (
-            <ProductCard
-              product={product}
-              translate={translateXReverse}
-              key={product.title}
-            />
-          ))}
-        </motion.div> */}
-        {/* <motion.div className="flex flex-row-reverse space-x-reverse space-x-20">
-          {thirdRow.map((product) => (
-            <ProductCard
-              product={product}
-              translate={translateX}
-              key={product.title}
-            />
-          ))}
-        </motion.div> */}
+     
+        
       </motion.div>
     </div>
   );
@@ -112,6 +97,7 @@ export const Header = () => {
         We are a team of passionate developers and designers that love to build
         amazing products.
       </p>
+  
     </div>
   );
 };

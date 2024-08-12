@@ -82,7 +82,7 @@ const HeaderBlock = () => (
     </h1>
     <a
       href="/contact"
-      className="flex items-center gap-1 text-red-300 hover:underline"
+      className="flex items-center gap-1 text-red-100 hover:underline"
     >
       Contact me <FiArrowRight />
     </a>
@@ -96,7 +96,7 @@ const SocialsBlock = () => (
         rotate: "2.5deg",
         scale: 1.1,
       }}
-      className="col-span-6 bg-red-500 md:col-span-3"
+      className="col-span-6 bg-red-300 md:col-span-3"
     >
       <a
         href="#"
@@ -110,7 +110,7 @@ const SocialsBlock = () => (
         rotate: "-2.5deg",
         scale: 1.1,
       }}
-      className="col-span-6 bg-green-600 md:col-span-3"
+      className="col-span-6 bg-green-300 md:col-span-3"
     >
       <a
         href="#"
@@ -138,7 +138,7 @@ const SocialsBlock = () => (
         rotate: "2.5deg",
         scale: 1.1,
       }}
-      className="col-span-6 bg-blue-500 md:col-span-3"
+      className="col-span-6 bg-blue-300 md:col-span-3"
     >
       <a
         href="#"
