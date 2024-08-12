@@ -103,8 +103,8 @@ const FooterLast=()=>{
   </div> */}
   <div className="bg-gray-100">
     <div className="container mx-auto text-zinc-600 py-4 px-5 flex flex-wrap flex-col space-x-6 sm:flex-row">
-      <p className=" text-sm text-center sm:text-left">© 2020 Tailblocks —
-        <a href="https://twitter.com/knyttneve" className=" ml-1" target="_blank" rel="noopener noreferrer">@knyttneve</a>
+      <p className=" text-sm text-center sm:text-left">© 2024 Keybolt —- 
+        {/* <a href="https://twitter.com/knyttneve" className=" ml-1" target="_blank" rel="noopener noreferrer">@knyttneve</a> */}
       </p>
       <span className="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center  md:justify-start md:w-auto">
         <a className="text-gray-500">
@@ -130,12 +130,7 @@ const FooterLast=()=>{
           </svg>
         </a>
       </span>
-      <p className=" px-2 text-center ">
-        Made with ❤️ by{" "}
-        <a href="#" className=" hover:underline">
-          @tomisloading
-        </a>
-      </p>
+      
      
     </div>
   </div>

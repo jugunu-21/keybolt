@@ -17,11 +17,11 @@ export default function Home (){
         {/* Core component */}
         <SparklesCore
           background="transparent"
-          minSize={0.4}
+          minSize={0.8}
           maxSize={1}
-          particleDensity={1200}
+          particleDensity={1500}
           className="w-full h-full"
-          particleColor="#FFFFFF"
+          particleColor="#6366F1"
         />
 
         {/* Radial Gradient to prevent sharp edges */}
