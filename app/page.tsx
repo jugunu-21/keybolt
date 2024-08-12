@@ -1,6 +1,6 @@
 "use client"
 
-import { RoundedDrawerNavExample } from "@/components/navbar/navbar"
+
 import { HeroParallaxDemo } from "../components/heroParallaxDemo"
 import { ImagePartion } from "../components/imagepartition"
 import { BlogPostCarousel } from "../components/blogPostCarousel/blogPostCarousel"
