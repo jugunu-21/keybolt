@@ -6,23 +6,7 @@ import { NeuHero } from "../hero/hero";
 import React, { useState } from 'react';
 import Link from "next/link";
 export const NavExample = () => {
-    const [blank,setBlank]=useState(true)
-    useEffect(() => {
-        const handlePathChange = () => {
-            if (typeof window !== 'undefined') {
-            
-                const pathAfterSlash = window.location.pathname.split('/')[1];
-                console.log(pathAfterSlash); // Assuming you want to log it
-                if(pathAfterSlash =="contact"){
-                    setBlank(false)
-                }
-            }
-        };
-
-        handlePathChange();
-    }, []);
-      
-
+ 
 
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,8 +14,8 @@ export const NavExample = () => {
     return (
         <div className="bg-neutral-950 ">
             <nav className="bg-gray-800">
-                <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-                    <div className="relative flex h-16 items-center justify-between">
+                <div className="mx-auto max-w-7xl   sm:px-6 lg:px-8">
+                    <div className="relative flex h-12 pt-3 px-4  items-center justify-between ">
                         <Link
                             href="/"
                             className="font-serif text-red-800 text-xl font-extrabold"
@@ -56,11 +40,11 @@ export const NavExample = () => {
                             <div className="hidden sm:ml-6 sm:block">
                                 <div className="flex space-x-4">
                                     <a  href="/" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white" aria-current="page">Dashboard</a>
-                                    {blank&&<>
-                                        <a  href="#testimonial" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Testimonial</a>
-                                    <a href="#feature" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Feature</a>
-                                    </> }
-                                    <a  href="/contact" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact Us</a>
+                           
+                                        <a  href="/#testimonial" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Testimonial</a>
+                                    <a href="/#feature" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Feature</a>
+                                 
+                                    <a  href="/contact" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact Us</a>
                                 </div>
                             </div>
                         </div>
@@ -99,11 +83,11 @@ export const NavExample = () => {
                         {isMenuOpen && (
                             <>
                                 <a onClick={() => setIsMenuOpen(false)} href="/" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white" aria-current="page">Dashboard</a>
-                                {blank&&<> <a onClick={() => setIsMenuOpen(false)} href="#testimonial" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Testimonials</a>
-                                <a onClick={() => setIsMenuOpen(false)}  href="#feature" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Features</a>
+                            <a onClick={() => setIsMenuOpen(false)} href="/#testimonial" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Testimonials</a>
+                                <a onClick={() => setIsMenuOpen(false)}  href="/#feature" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Features</a>
                                 
                               
-                           </>}
+                      
                            <a onClick={() => setIsMenuOpen(false)} href="/contact" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact Us</a>
                             </>)}
 
