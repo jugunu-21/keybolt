@@ -41,7 +41,7 @@ export const NavExample = () => {
                         <div className=" flex items-center sm:hidden">
                             {/* <!-- Mobile menu button -->*/}
 
-                            <button  type="button" className=" hideenrelative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none " aria-controls="mobile-menu" aria-expanded="false">
+                            <button onClick={() => setIsMenuOpen(true)}  type="button" className=" hideenrelative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none " aria-controls="mobile-menu" aria-expanded="false">
 
                                 <div className="">
 
@@ -92,19 +92,19 @@ export const NavExample = () => {
                     </div>
                 </div>
                 <div
-                onMouseEnter={() => setIsMenuOpen(true)}
-                onMouseLeave={() => setIsMenuOpen(false)} className="sm:hidden" id="mobile-menu">
+               
+                onMouseLeave={() => setIsMenuOpen(false)}  id="mobile-menu">
 
                     <div className="space-y-1 px-2 pb-3 pt-2">
                         {isMenuOpen && (
                             <>
-                                <a href="/" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white" aria-current="page">Dashboard</a>
-                                {blank&&<> <a href="#testimonial" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Testimonials</a>
-                                <a  href="#feature" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Features</a>
+                                <a onClick={() => setIsMenuOpen(false)} href="/" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white" aria-current="page">Dashboard</a>
+                                {blank&&<> <a onClick={() => setIsMenuOpen(false)} href="#testimonial" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Testimonials</a>
+                                <a onClick={() => setIsMenuOpen(false)}  href="#feature" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Features</a>
                                 
                               
                            </>}
-                           <a href="/contact" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact Us</a>
+                           <a onClick={() => setIsMenuOpen(false)} href="/contact" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact Us</a>
                             </>)}
 
                     </div>
