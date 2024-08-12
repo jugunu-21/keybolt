@@ -2,6 +2,9 @@
 import { Dispatch, SetStateAction, useState } from "react";
 import { motion } from "framer-motion";
 import { IconType } from "react-icons";
+import { VscSymbolInterface } from "react-icons/vsc";
+import { TbBrandSpacehey } from "react-icons/tb";
+import { TbBrandSwift } from "react-icons/tb";
 import {
   SiAtlassian,
   SiDribbble,
@@ -175,7 +178,7 @@ interface Testimonial {
 
 const testimonials = [
   {
-    Icon: SiNike,
+    Icon:  VscSymbolInterface,
     description: "The real-time product monitoring feature has been a game-changer for us. We now have a clear understanding of what’s selling and what’s not, leading to more informed decisions and less waste.",
     name: "Liam Johnson",
    title: "Manager, The Green Cafe"
@@ -193,13 +196,13 @@ const testimonials = [
    title: "Co-owner, Daily Delights"
   },
   {
-    Icon: SiGrubhub,
+    Icon: TbBrandSpacehey,
     description: "The AI-generated sales forecasts are spot on and have helped us optimize our inventory levels perfectly. Keybolt’s technology is a must-have for any food business looking to grow.",
     name: "James Brown",
    title: "Head Chef, Gourmet Bistro"
   },
   {
-    Icon: SiKaggle,
+    Icon: TbBrandSwift,
     description: "I'm amazed at how Keybolt has simplified our operations. From sales tracking to group restaurant recommendations, their tools are easy to use and incredibly effective.",
   name: "Olivia Davis",
  title: "Owner, Farmhouse Eatery"

@@ -143,7 +143,7 @@ const ExampleFeature = ({ featureInView }: { featureInView: FeatureType }) => {
         </p>
       </div> */}
       <div className="relative h-96 w-full">
-        <Image src={featureInView.Images} alt="Description" layout="fill" objectFit="cover" />
+        <Image src={featureInView.svg} alt="Description" layout="fill" objectFit="cover" />
       </div>
 
     </div>
@@ -158,6 +158,7 @@ type FeatureType = {
   title: string;
   description: string;
   contentPosition: "l" | "r";
+  svg: string;
   Images: StaticImageData;
 };
 
@@ -168,6 +169,7 @@ const features: FeatureType[] = [
     title: "Stay Stocked!",
     description: "Never run out of key ingredients again. Our automated ordering system ensures your inventory levels are always optimal, reducing waste and ensuring you have what you need to meet customer demand.",
     contentPosition: "r",
+    svg:"/svg/undraw_artificial_intelligence_re_enpp.svg",
     Images:imagesFeature.image1,
   },
   {
@@ -177,7 +179,7 @@ const features: FeatureType[] = [
     title: "Perfect Dining Choices!",
     description: "Find the ideal restaurant for any group with our Group Restaurant Finder. Consider everyone’s preferences to make dining decisions easy and enjoyable for everyone involved.",
     contentPosition: "l",
-    
+     svg:"/svg/undraw_street_food_re_uwex.svg",
     Images: imagesFeature.image2,
   },
   {
@@ -186,6 +188,7 @@ const features: FeatureType[] = [
     title: "Real-Time Analytics!",
     description: "Track how your products are performing in real time. Monitor sales, waste, and stock levels to quickly adapt and improve your operations based on actual data.",
     contentPosition: "r",
+    svg:"/svg/undraw_visual_data_re_mxxo.svg",
     Images:imagesFeature.image3,
   },
   {
@@ -194,6 +197,7 @@ const features: FeatureType[] = [
     title: "Streamline Your Business!",
     description: "Transform your food business with Keybolt's advanced AI-driven tools. From precise sales forecasts and automated ordering to real-time product tracking, our solutions are designed to help you maximize efficiency and minimize waste. Empower your business with technology that grows with you.",
     contentPosition: "l",
+    svg:"/svg/undraw_happy_news_re_tsbd.svg",
     Images:imagesFeature.image4,
   },
 ];
