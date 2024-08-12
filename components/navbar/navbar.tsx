@@ -60,11 +60,11 @@ export const NavExample = () => {
 
 
                                 {isMenuOpennProfile === true && (
-                                    <><div className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabIndex={-1}>
+                                    <><div className="absolute right-0 z-10 mt-2 w-44 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabIndex={-1}>
                                       
-                                        <a onClick={() => setIsMenuOpennProfile(false)} href="#" className="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabIndex={-1} id="user-menu-item-0">Your Profiles</a>
-                                        <a onClick={() => setIsMenuOpennProfile(false)} href="/contact" className="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabIndex={-1} id="user-menu-item-1">sign In</a>
-                                        <a onClick={() => setIsMenuOpennProfile(false)} href="#" className="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabIndex={-1} id="user-menu-item-2">Sign out</a>
+                                        <div onClick={() => setIsMenuOpennProfile(false)}  className="block px-4 py-2 text-md font-bold text-gray-700" role="menuitem" tabIndex={-1} id="user-menu-item-0">Your Profiles</div>
+                                        <a onClick={() => setIsMenuOpennProfile(false)} href="/contact" className="block  font-medium px-4 py-2 text-sm text-gray-700" role="menuitem" tabIndex={-1} id="user-menu-item-1">sign In</a>
+                                        <a onClick={() => setIsMenuOpennProfile(false)} href="/#faq" className="block px-4 font-medium py-2 text-sm text-gray-700" role="menuitem" tabIndex={-1} id="user-menu-item-2">FAQ</a>
                                     </div></>
                                 )}
 

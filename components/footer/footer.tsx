@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <div>
    <Newsletter/>
-     <FooterLast/>
+     {/* <FooterLast/> */}
     </div>
   );
 }
@@ -16,7 +16,7 @@ const FooterLast=()=>{
   <div className="container px-5 py-24 mx-auto">
     <div className="flex flex-wrap md:text-left text-center -mb-10 -mx-4">
       <div className="lg:w-1/4 md:w-1/3 w-1/2 px-4">
-        <h2 className="title-font font-bold text-gray-900 tracking-widest text-sm mb-3">About Us</h2>
+        <h2 className="title-font font-bold text-gray-900 tracking-widest text-lg mb-3">About Us</h2>
         <nav className="list-none mb-10">
           <li>
             <a className="text-gray-600 hover:text-gray-800">Revolutionizing the Food Industry with AI</a>
@@ -33,7 +33,7 @@ const FooterLast=()=>{
         </nav>
       </div>
       <div className="lg:w-1/4 md:w-1/3 w-1/2 px-4">
-        <h2 className="title-font font-bold text-gray-900 tracking-widest text-sm mb-3">Services</h2>
+        <h2 className="title-font font-bold text-gray-900 tracking-widest text-lg mb-3">Services</h2>
         <nav className="list-none mb-10">
           <li>
             <a className="text-gray-600 hover:text-gray-800">AI Sales Forecasting</a>
@@ -50,7 +50,7 @@ const FooterLast=()=>{
         </nav>
       </div>
       <div className="lg:w-1/4 md:w-1/3 w-1/2 px-4">
-        <h2 className="title-font font-bold text-gray-900 tracking-widest text-sm mb-3">Industries</h2>
+        <h2 className="title-font font-bold text-gray-900 tracking-widest text-lg mb-3">Industries</h2>
         <nav className="list-none mb-10">
           <li>
             <a className="text-gray-600 hover:text-gray-800">Food & Beverage</a>
@@ -68,7 +68,7 @@ const FooterLast=()=>{
       </div>
       
       <div className="lg:w-1/4 md:w-1/3 w-1/2 px-4">
-        <h2 className="title-font font-bold text-gray-900 tracking-widest text-sm mb-3">Resources</h2>
+        <h2 className="title-font font-bold text-gray-900 tracking-widest text-lg mb-3">Resources</h2>
         <nav className="list-none mb-10">
           <li>
             <a className="text-gray-600 hover:text-gray-800">Blog</a>
