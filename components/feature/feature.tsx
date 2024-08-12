@@ -8,16 +8,9 @@ import { StaticImageData } from 'next/image';
 const FeatureShiftColumns = () => {
   return (
     <div id="feature">
-      {/* <div className="flex h-48 flex-col items-center justify-center bg-slate-900">
-        <span className="font-semibold uppercase text-white">Scroll down</span>
-        <span className="mt-2 block rounded-full bg-indigo-600 px-4 py-1 text-center font-medium text-white md:hidden">
-          Note: This is much cooler on desktop 😊
-        </span>
-      </div> */}
+
       <SwapColumnFeatures  />
-      {/* <div className="flex h-48 items-center justify-center bg-indigo-600">
-        <span className="font-semibold uppercase text-white">Scroll up</span>
-      </div> */}
+
     </div>
   );
 };
@@ -64,7 +57,7 @@ const SlidingFeatureDisplay = ({
           stiffness: 400,
           damping: 25,
         }}
-        className="h-fit w-3/5 rounded-xl p-8"
+               className="h-5/6 w-3/5 rounded-xl p-8"
       >
         <ExampleFeature featureInView={featureInView} />
       </motion.div>
@@ -142,8 +135,8 @@ const ExampleFeature = ({ featureInView }: { featureInView: FeatureType }) => {
           means.
         </p>
       </div> */}
-      <div className="relative h-72 w-full">
-        <Image src={featureInView.svg}  className="p-4"  alt="Description" layout="fill" objectFit="cover" />
+      <div className=" relative h-80 w-90">
+        <Image src={featureInView.svg}  className="p-4"  alt="Description" layout="fill"  objectFit="contain" />
       </div>
 
     </div>
