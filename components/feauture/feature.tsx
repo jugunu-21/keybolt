@@ -7,18 +7,18 @@ import { imagesFeature } from "@/public/images/images";
 import { StaticImageData } from 'next/image';
 const FeatureShiftColumns = () => {
   return (
-    <>
+    <div id="feature">
       {/* <div className="flex h-48 flex-col items-center justify-center bg-slate-900">
         <span className="font-semibold uppercase text-white">Scroll down</span>
         <span className="mt-2 block rounded-full bg-indigo-600 px-4 py-1 text-center font-medium text-white md:hidden">
           Note: This is much cooler on desktop 😊
         </span>
       </div> */}
-      <SwapColumnFeatures />
+      <SwapColumnFeatures  />
       {/* <div className="flex h-48 items-center justify-center bg-indigo-600">
         <span className="font-semibold uppercase text-white">Scroll up</span>
       </div> */}
-    </>
+    </div>
   );
 };
 
@@ -126,7 +126,7 @@ const Content = ({
 
 const ExampleFeature = ({ featureInView }: { featureInView: FeatureType }) => {
   return (
-    <div className="relative h-90 w-full rounded-xl bg-slate-800 shadow-xl">
+    <div className="relative h-full w-full rounded-xl bg-slate-800 shadow-xl">
       <div className="flex w-full gap-1.5 rounded-t-xl bg-slate-900 p-3">
         <div className="h-3 w-3 rounded-full bg-red-500" />
         <div className="h-3 w-3 rounded-full bg-yellow-500" />
@@ -142,8 +142,8 @@ const ExampleFeature = ({ featureInView }: { featureInView: FeatureType }) => {
           means.
         </p>
       </div> */}
-      <div className="relative h-80 w-full">
-        <Image src={featureInView.svg} alt="Description" layout="fill" objectFit="cover" />
+      <div className="relative h-72 w-full">
+        <Image src={featureInView.svg}  className="p-4"  alt="Description" layout="fill" objectFit="cover" />
       </div>
 
     </div>
@@ -197,7 +197,7 @@ const features: FeatureType[] = [
     title: "Streamline Your Business!",
     description: "Transform your food business with Keybolt's advanced AI-driven tools. From precise sales forecasts and automated ordering to real-time product tracking, our solutions are designed to help you maximize efficiency and minimize waste. Empower your business with technology that grows with you.",
     contentPosition: "l",
-    svg:"/svg/undraw_happy_news_re_tsbd.svg",
+    svg:"/svg/undraw_online_learning_re_qw08.svg",
     Images:imagesFeature.image4,
   },
 ];

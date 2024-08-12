@@ -1,10 +1,30 @@
 "use client"
 import { links } from "@/public/navdata"
+import { useEffect } from "react";
 import { RoundedDrawerNav } from "../navbar/roundedDrawerNav/roundedDrawerNav"
 import { NeuHero } from "../hero/hero";
 import React, { useState } from 'react';
 import Link from "next/link";
 export const NavExample = () => {
+    const [blank,setBlank]=useState(true)
+    useEffect(() => {
+        const handlePathChange = () => {
+            if (typeof window !== 'undefined') {
+            
+                const pathAfterSlash = window.location.pathname.split('/')[1];
+                console.log(pathAfterSlash); // Assuming you want to log it
+                if(pathAfterSlash =="contact"){
+                    setBlank(false)
+                }
+            }
+        };
+
+        handlePathChange();
+    }, []);
+      
+
+
+
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isMenuOpennProfile, setIsMenuOpennProfile] = useState(false);
     return (
@@ -39,8 +59,12 @@ export const NavExample = () => {
                                 <div className="flex space-x-4">
                                     {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white"  -->*/}
                                     <a onClick={() => setIsMenuOpen(false)} href="/" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white" aria-current="page">Dashboard</a>
-                                    <a onClick={() => setIsMenuOpen(false)} href="#" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Team</a>
-                                    <a onClick={() => setIsMenuOpen(false)} href="#" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
+                                    {blank&&<>
+                                        <a onClick={() => setIsMenuOpen(false)} href="#testimonial" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Testimonial</a>
+                                    <a onClick={() => setIsMenuOpen(false)} href="#feature" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Feature</a>
+                                    </> }
+                         
+                                    
                                     <a onClick={() => setIsMenuOpen(false)} href="/contact" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact Us</a>
                                 </div>
                             </div>
@@ -80,9 +104,11 @@ export const NavExample = () => {
                         {isMenuOpen && (
                             <>
                                 <a href="/" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white" aria-current="page">Dashboard</a>
-                                <a href="#" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Team</a>
+                                {blank&&<> <a href="#" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Team</a>
                                 <a href="#" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
+                                
                                 <a href="/contact" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact Us</a>
+                           </>}
                             </>)}
 
                     </div>
