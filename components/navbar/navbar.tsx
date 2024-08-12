@@ -1,8 +1,5 @@
 "use client"
-import { links } from "@/public/navdata"
-import { useEffect } from "react";
-import { RoundedDrawerNav } from "../navbar/roundedDrawerNav/roundedDrawerNav"
-import { NeuHero } from "../hero/hero";
+
 import React, { useState } from 'react';
 import Link from "next/link";
 export const NavExample = () => {

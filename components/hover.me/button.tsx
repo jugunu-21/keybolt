@@ -1,12 +1,6 @@
-//  const Example = () => {
-//     return (
-//       <div className="grid min-h-[200px] place-content-center bg-slate-900 p-4">
-//         <GradientShadowButton />
-//       </div>
-//     );
-//   };
+
 import { IconType } from "react-icons";
-import { FiArrowRight, FiMail, FiMapPin } from "react-icons/fi";
+
 export const GradientShadowButton = ({ onClick, type,Icon,value }: { onClick?: () => void, type?: "submit" | "reset" | "button";  Icon?:IconType ,value:string }) => {
   return (
     <div className="group relative w-fit  texttransition-transform duration-300 active:scale-95">
