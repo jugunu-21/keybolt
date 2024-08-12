@@ -97,8 +97,11 @@ import {
   SiGodaddy,
 } from "react-icons/si";
 import { IconType } from "react-icons";
+import { useRouter } from "next/navigation"; 
+import { GradientShadowButton } from "../hover.me/button";
 
 export const NeuHero = () => {
+ 
   return (
     <section className="overflow-hidden bg-white">
       <div className="relative flex flex-col items-center justify-center px-12 pb-48 pt-12 md:pt-24">
@@ -111,6 +114,11 @@ export const NeuHero = () => {
 };
 
 const Copy = () => {
+  const router =useRouter()
+  const handleClick =()=>{
+    router.push("/contact")
+
+  };
   return (
     <>
       <div className="mb-1.5 rounded-full bg-zinc-600">
@@ -136,9 +144,11 @@ const Copy = () => {
 
         To empowers local food businesses,Keybolt uses AI-driven tools that streamline operations and boost efficiency, within reach for every entrepreneur.
       </p>
-      <button className="rounded-lg bg-indigo-600 p-3 uppercase text-white transition-colors hover:bg-indigo-700">
+     
+     < GradientShadowButton onClick={handleClick} value={"Get started -   no CC required" }/>
+      {/* <button className="rounded-lg bg-indigo-600 p-3 uppercase text-white transition-colors hover:bg-indigo-700">
         <span className="font-bold">Get started - </span> no CC required
-      </button>
+      </button> */}
     </>
   );
 };

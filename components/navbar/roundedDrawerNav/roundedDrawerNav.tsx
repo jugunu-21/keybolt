@@ -11,6 +11,7 @@ import { DesktopLinks } from "../desktopLinks/desktopLinks";
 import {MobileLinks} from "../mobileLink/mobileLink"
 import { FiMenu } from "react-icons/fi";
 import { AnimatePresence, motion } from "framer-motion";
+import { GradientShadowButton } from "@/components/hover.me/button";
  export const RoundedDrawerNav = ({
     children,
     navBackground,
@@ -48,9 +49,11 @@ import { AnimatePresence, motion } from "framer-motion";
                             activeSublinks={activeSublinks}
                         />
                     </div>
-                    <button className="hidden rounded-md bg-indigo-500 px-3 py-1.5 text-sm text-neutral-50 transition-colors hover:bg-indigo-600 md:block">
-                        <span className="font-bold">Get started - </span> no CC required
-                    </button>
+                    
+                    {/* <button className="hidden rounded-md bg-indigo-500 px-3 py-1.5 text-sm text-neutral-50 transition-colors hover:bg-indigo-600 md:block"> */}
+                    <GradientShadowButton  />
+                        {/* <span className="font-bold">Get started - </span> no CC required */}
+                    {/* </button> */}
                     <button
                         onClick={() => setMobileNavOpen((pv) => !pv)}
                         className="mt-0.5 block text-2xl text-neutral-50 md:hidden"

@@ -75,7 +75,7 @@ export default function Section() {
                         </div>
                     </div>
                     <div className="flex justify-center items-center py-6 my-8">
-                        <GradientShadowButton onClick={handleclick} />
+                        <GradientShadowButton  value={"Contact Us"} onClick={handleclick} Icon={FiArrowRight} />
                     </div>
 
 
