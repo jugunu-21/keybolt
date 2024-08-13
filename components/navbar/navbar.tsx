@@ -10,10 +10,9 @@ import { handler } from "tailwindcss-animate";
 
 const FlipNavWrapper = () => {
   return (
-    <div className="bg-gray-50 fixed w-full top-0 z-50">
+    <div className="bg-gray-50 sticky top-0 h-16 z-50 pb-4">
       <FlipNav />
-      {/* <div className="h-12 "  /> */}
-    
+      {/* <div className="h-72" /> */}
     </div>
   );
 };
@@ -22,18 +21,18 @@ const FlipNav = () => {
  const handler=()=>{
    setIsOpen((isOpen) => !isOpen)
  } 
-  return (
-    <nav className="bg-white p-4 border-b-[1px] border-gray-200 flex items-center justify-between relative">
-      <NavLeft setIsOpen={setIsOpen} />
-      <NavRight />
-      <NavMenu  handler={handler} isOpen={isOpen} />
-    </nav>
-  );
+ return (
+  <div className="bg-white p-4 border-b-[1px] border-gray-200 flex items-center justify-between relative">
+    <NavLeft setIsOpen={setIsOpen} />
+    <NavRight />
+    <NavMenu handler={handler} isOpen={isOpen} />
+  </div>
+);
 };
 const Logo = () => {
   // Temp logo from https://logoipsum.com/
   return (
-    
+    // <div></div>
     <Image src="/svg/logo.png" width={30} height={20} alt="img"/>
   );
 };
@@ -66,17 +65,17 @@ const NavLeft = ({
 const NavLink = ({ text,link }: { text: string,link:string }) => {
   return (
     <a
-      href={link}
-      rel="nofollow"
-      className="hidden lg:block h-[20px] overflow-hidden font-medium"
-    >
-      <motion.div whileHover={{ y: -30 }}>
-        <span className="flex items-center h-[20px] text-gray-700">{text}</span>
-        <span className="flex items-center h-[20px] text-indigo-600">
-          {text}
-        </span>
-      </motion.div>
-    </a>
+    href={link}
+    rel="nofollow"
+    className="hidden lg:block h-[30px] overflow-hidden font-medium"
+  >
+    <motion.div whileHover={{ y: -30 }}>
+      <span className="flex items-center h-[30px] text-gray-500">{text}</span>
+      <span className="flex items-center h-[30px] text-indigo-600">
+        {text}
+      </span>
+    </motion.div>
+  </a>
   );
 };
 
@@ -88,18 +87,18 @@ const NavRight = () => {
       onClick={()=>router.push("/contact")}
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
-        className="px-4 py-2 bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent font-medium rounded-md whitespace-nowrap"
+        className="px-4 py-2 bg-gradient-to-r from-violet-600 to-indigo-600 text-white font-medium rounded-md whitespace-nowrap"
       >
         Sign in
       </motion.button>
-      <motion.button
+      {/* <motion.button
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         onClick={()=>{toast.error("Need to Sign In First");router.push("/contact")}}
         className="px-4 py-2 bg-gradient-to-r from-violet-600 to-indigo-600 text-white font-medium rounded-md whitespace-nowrap"
       >
         Sign up
-      </motion.button>
+      </motion.button> */}
     </div>
   );
 };
@@ -124,16 +123,16 @@ const MenuLink = ({ text ,link,handler}: { text: string, link:string ,handler:()
   return (
     <motion.a
       variants={menuLinkVariants}
-      rel="nofollow"
-      href={link}
       onClick={handler}
-      className="h-[20px] overflow-hidden font-medium text-lg flex items-start gap-2"
+      // rel="nofollow"
+      href={link}
+      className="h-[20px] overflow-hidden font-medium text-sm flex items-start gap-2"
     >
       <motion.span variants={menuLinkArrowVariants}>
         <FiArrowRight className="h-[20px] text-gray-950" />
       </motion.span>
-      <motion.div whileHover={{ y: -30 }}>
-        <span className="flex items-center h-[20px] text-gray-700">{text}</span>
+      <motion.div whileHover={{ y: -20 }}>
+        <span className="flex items-center h-[20px] text-gray-500">{text}</span>
         <span className="flex items-center h-[20px] text-indigo-600">
           {text}
         </span>
