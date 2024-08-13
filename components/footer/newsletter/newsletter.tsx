@@ -31,7 +31,7 @@ export default function Newsletter() {
                <GradientShadowButton value={"Submit"} onClick={()=>handleInputChange} />
                 {/* <button onClick={handleSubmit} type="submit" className="flex-none rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold  shadow-sm hover:bg-indigo-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Subscribe</button> */}
             </div>
-            <div className=' text-gray-700 py-4 pr-0 '>we care about your data. Read our <span className='text-indigo-500'>privacy policy</span></div>
+            <div className="text-gray-700 py-4 pr-0 text-sm">we care about your data. Read our <span className='text-indigo-500'>privacy policy</span></div>
           </div>
           <dl className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
             <div className="flex flex-col items-start">

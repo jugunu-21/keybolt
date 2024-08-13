@@ -103,7 +103,7 @@ import { GradientShadowButton } from "../hover.me/button";
 export const NeuHero = () => {
  
   return (
-    <section className="overflow-hidden bg-white">
+    <section className="overflow-hidden bg-white mt-12 md:mt-5">
       <div className="relative flex flex-col items-center justify-center px-12 pb-48 pt-12 md:pt-24">
         <Copy />
         <MockupScreen />
