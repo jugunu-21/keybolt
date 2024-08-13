@@ -7,6 +7,7 @@ import { FiMenu, FiArrowRight } from "react-icons/fi";
 import toast from "react-hot-toast";
 import { useRouter } from "next/navigation";
 import { handler } from "tailwindcss-animate";
+import { GradientShadowButton } from "../hover.me/button";
 
 const FlipNavWrapper = () => {
   return (
@@ -82,23 +83,9 @@ const NavLink = ({ text,link }: { text: string,link:string }) => {
 const NavRight = () => {
     const router=useRouter()
   return (
-    <div className="flex items-center gap-4">
-      <motion.button
-      onClick={()=>router.push("/contact")}
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-        className="px-4 py-2 bg-gradient-to-r from-violet-600 to-indigo-600 text-white font-medium rounded-md whitespace-nowrap"
-      >
-        Sign in
-      </motion.button>
-      {/* <motion.button
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-        onClick={()=>{toast.error("Need to Sign In First");router.push("/contact")}}
-        className="px-4 py-2 bg-gradient-to-r from-violet-600 to-indigo-600 text-white font-medium rounded-md whitespace-nowrap"
-      >
-        Sign up
-      </motion.button> */}
+    <div className="px-4 py-2 items-center gap-4">
+       <GradientShadowButton value={" Sign in"} onClick={()=>router.push("/contact")} />
+
     </div>
   );
 };

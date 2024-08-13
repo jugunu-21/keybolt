@@ -4,7 +4,8 @@ import Newsletter from "./newsletter/newsletter";
 import Image from "next/image";
 export default function Footer() {
   return (
-    <div>
+    <div className=" text-gray-800 bg-gray-100 body-font border-t-2 border-gray-200"  >
+     
       <Newsletter />
       <FooterLast/>
     </div>
@@ -12,9 +13,9 @@ export default function Footer() {
 }
 const FooterLast = () => {
   return (
-    <footer className="text-gray-600 body-font">
+    <footer className="text-gray-800 body-font border-t-2 border-gray-200">
 
-      <div className="bg-gray-100">
+      <div className=" ">
         <div className="container mx-auto text-zinc-600 py-4 px-5 flex flex-wrap flex-col space-x-6 sm:flex-row">
           <p className=" text-sm text-center sm:text-left">© 2024 Keybolt. Proudly serving and supporting the community.
           

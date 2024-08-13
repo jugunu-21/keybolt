@@ -7,7 +7,7 @@ import { imagesFeature } from "@/public/images/images";
 import { StaticImageData } from 'next/image';
 const FeatureShiftColumns = () => {
   return (
-    <div id="feature">
+    <div id="feature" >
 
       <SwapColumnFeatures  />
 
@@ -15,11 +15,11 @@ const FeatureShiftColumns = () => {
   );
 };
 
-const SwapColumnFeatures = () => {
+const  SwapColumnFeatures = () => {
   const [featureInView, setFeatureInView] = useState<FeatureType>(features[0]);
 
   return (
-    <section className="relative mx-auto max-w-7xl">
+    <section className="relative mx-auto max-w-7xl ">
       <SlidingFeatureDisplay featureInView={featureInView} />
 
       {/* Offsets the height of SlidingFeatureDisplay so that it renders on top of Content to start */}
@@ -48,7 +48,7 @@ const SlidingFeatureDisplay = ({
         justifyContent:
           featureInView.contentPosition === "l" ? "flex-end" : "flex-start",
       }}
-      className="pointer-events-none sticky top-0 z-10 hidden h-screen w-full items-center justify-center md:flex"
+      className="pointer-events-none sticky top-0 z-10 hidden h-screen w-full items-center justify-center md:flex pt-[10vh] "
     >
       <motion.div
         layout
@@ -119,25 +119,15 @@ const Content = ({
 
 const ExampleFeature = ({ featureInView }: { featureInView: FeatureType }) => {
   return (
-    <div className="relative h-full w-full rounded-xl bg-slate-800 shadow-xl">
-      <div className="flex w-full gap-1.5 rounded-t-xl bg-slate-900 p-3">
+    <div className="relative h-[60vh] w-full rounded-xl bg-slate-800 shadow-xl">
+      <div className="flex w-full gap-1.5 rounded-t-xl p-3">
         <div className="h-3 w-3 rounded-full bg-red-500" />
         <div className="h-3 w-3 rounded-full bg-yellow-500" />
         <div className="h-3 w-3 rounded-full bg-green-500" />
       </div>
-      {/* <div className="p-2">
-        <p className="font-mono text-sm text-slate-200">
-          <span className="text-green-300">~</span> Show a part of your product
-          that explains what{" "}
-          <span className="inline-block rounded bg-indigo-600 px-1 font-semibold">
-            {featureInView.title}
-          </span>{" "}
-          means.
-        </p>
-      </div> */}
-      <div className=" relative h-80 w-90">
-        <Image src={featureInView.svg}  className="p-4"  alt="Description" layout="fill"  objectFit="contain" />
-      </div>
+     
+      <div className=" relative h-80 w-90  items-end">
+      </div> <Image src={featureInView.svg}  className="p-4  bottom-0"  alt="Description" layout="fill"  objectFit="contain" />
 
     </div>
   );
