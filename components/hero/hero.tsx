@@ -22,28 +22,7 @@ import {
   FaCarrot
 } from "react-icons/fa";
 import { motion } from "framer-motion";
-import {
-  SiNike,
-  Si3M,
-  SiAbstract,
-  SiAdobe,
-  SiAirtable,
-  SiAmazon,
-  SiBox,
-  SiBytedance,
-  SiChase,
-  SiCloudbees,
-  SiBurton,
-  SiBmw,
-  SiHeroku,
-  SiBuildkite,
-  SiCouchbase,
-  SiDailymotion,
-  SiDeliveroo,
-  SiEpicgames,
-  SiGenius,
-  SiGodaddy,
-} from "react-icons/si";
+
 import { IconType } from "react-icons";
 import { useRouter } from "next/navigation"; 
 import { GradientShadowButton } from "../hover.me/button";
@@ -227,10 +206,11 @@ const TranslateWrapper = ({
   );
 };
 
-const LogoItem = ({ Icon, name }: { Icon: IconType; name: string }) => {
+const LogoItem = ({ Icon, name ,IconClr}: { Icon: IconType; name: string;IconClr:string }) => {
   return (
     <span className="flex items-center justify-center gap-4 px-4 py-2 md:py-4">
-      <Icon className="text-2xl text-indigo-600 md:text-3xl" />
+<Icon className={`text-2xl ${IconClr} md:text-3xl`} />
+
       <span className="whitespace-nowrap text-xl font-semibold uppercase md:text-2xl">
         {name}
       </span>
@@ -240,31 +220,28 @@ const LogoItem = ({ Icon, name }: { Icon: IconType; name: string }) => {
 
 const LogoItemsTop = () => (
   <>
-
-    <LogoItem Icon={FaApple} name="Apple" />
-    <LogoItem Icon={FaStar} name=" Starbucks" />
-    <LogoItem Icon={FaBeer} name=" beer brands" />
-    <LogoItem Icon={FaHamburger} name=" McDonald's" />
-    <LogoItem Icon={FaPizzaSlice} name=" Domino’s" />
-    <LogoItem Icon={FaCoffee} name=" Starbucks" />
-    <LogoItem Icon={FaIceCream} name=" Baskin-Robbins " />
-    <LogoItem Icon={FaCookie} name=" Famous Amos" />
-    <LogoItem Icon={FaWineBottle} name=" Wine brands (general)" />
-    <LogoItem Icon={FaCarrot} name=" Trader Joe's " />
+<LogoItem Icon={FaApple} name="Granny Smith" IconClr="text-red-600" /> {/* Apple Brand */}
+<LogoItem Icon={FaCoffee} name="Blue Bottle Coffee" IconClr="text-yellow-500" /> {/* Coffee Brand */}
+<LogoItem Icon={FaBeer} name="Bell's Brewery" IconClr="text-blue-600" /> {/* Beer Brand */}
+<LogoItem Icon={FaHamburger} name="In-N-Out Burger" IconClr="text-green-600" /> {/* Hamburger Brand */}
+<LogoItem Icon={FaPizzaSlice} name="PizzaExpress" IconClr="text-purple-600" /> {/* Pizza Brand */}
+<LogoItem Icon={FaIceCream} name="Häagen-Dazs" IconClr="text-pink-600" /> {/* Ice Cream Brand */}
+<LogoItem Icon={FaCookie} name="Lenny & Larry's" IconClr="text-brown-600" /> {/* Cookie Brand */}
+<LogoItem Icon={FaWineBottle} name="Fess Parker Winery" IconClr="text-teal-600" /> {/* Wine Brand */}
+<LogoItem Icon={FaCarrot} name="Earthbound Farm" IconClr="text-orange-600" /> {/* Organic Produce Brand */}
   </>
 );
 
 const LogoItemsBottom = () => (
   <>
-   <LogoItem Icon={FaApple} name="Apple" />
-    <LogoItem Icon={FaStar} name=" Starbucks" />
-    <LogoItem Icon={FaBeer} name=" beer brands" />
-    <LogoItem Icon={FaHamburger} name=" McDonald's" />
-    <LogoItem Icon={FaPizzaSlice} name=" Domino’s" />
-    <LogoItem Icon={FaCoffee} name=" Starbucks" />
-    <LogoItem Icon={FaIceCream} name=" Baskin-Robbins " />
-    <LogoItem Icon={FaCookie} name=" Famous Amos" />
-    <LogoItem Icon={FaWineBottle} name=" Wine brands (general)" />
-    <LogoItem Icon={FaCarrot} name=" Trader Joe's " />
+<LogoItem Icon={FaApple} name="Granny Smith" IconClr="text-red-600" /> {/* Apple Brand */}
+<LogoItem Icon={FaCoffee} name="Blue Bottle Coffee" IconClr="text-yellow-500" /> {/* Coffee Brand */}
+<LogoItem Icon={FaBeer} name="Bell's Brewery" IconClr="text-blue-600" /> {/* Beer Brand */}
+<LogoItem Icon={FaHamburger} name="In-N-Out Burger" IconClr="text-green-600" /> {/* Hamburger Brand */}
+<LogoItem Icon={FaPizzaSlice} name="PizzaExpress" IconClr="text-purple-600" /> {/* Pizza Brand */}
+<LogoItem Icon={FaIceCream} name="Häagen-Dazs" IconClr="text-pink-600" /> {/* Ice Cream Brand */}
+<LogoItem Icon={FaCookie} name="Lenny & Larry's" IconClr="text-brown-600" /> {/* Cookie Brand */}
+<LogoItem Icon={FaWineBottle} name="Fess Parker Winery" IconClr="text-teal-600" /> {/* Wine Brand */}
+<LogoItem Icon={FaCarrot} name="Earthbound Farm" IconClr="text-orange-600" /> {/* Organic Produce Brand */}
   </>
 );
