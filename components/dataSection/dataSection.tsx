@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { FiArrowRight, FiMail, FiMapPin } from "react-icons/fi";
-import { GradientShadowButton } from "@/components/hover.me/button"
+import { GradientShadowButton ,GradientShadowlink} from "@/components/hover.me/button"
 import { useRouter } from "next/navigation";
 import { SparklesCore } from "../../components/ui/sparkle";
 export default function Section() {
@@ -75,7 +75,8 @@ export default function Section() {
                         </div>
                     </div>
                     <div className="flex justify-center items-center py-6 my-8">
-                        <GradientShadowButton  value={"Contact Us"} onClick={handleclick} Icon={FiArrowRight} />
+                    {/* <GradientShadowButton  value={"Contact Us"} onClick={handleclick} Icon={FiArrowRight} /> */}
+                        <GradientShadowlink  value={"Contact Us"} href="Abhinav@oakley.website" Icon={FiArrowRight} />
                     </div>
 
 

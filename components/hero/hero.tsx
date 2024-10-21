@@ -69,7 +69,9 @@ const Copy = () => {
       </h1>
       <p className="mx-auto my-4 max-w-3xl text-center text-base leading-relaxed md:my-6 md:text-xl md:leading-relaxed">
 
-        To empowers local food businesses,Keybolt uses AI-driven tools that streamline operations and boost efficiency, within reach for every entrepreneur.
+        {/* To empowers local food businesses,Keybolt uses AI-driven tools that streamline operations and boost efficiency.
+         */}
+       To empower local food businesses, Keybolt uses AI-driven tools that streamline operations and boost efficiency.
       </p>
      
      < GradientShadowButton onClick={handleClick} value={"Get started -   no CC required" }/>
