@@ -75,12 +75,12 @@ const PrivacyPolicy: React.FC = () => {
 
         <h2 className="text-2xl font-semibold mt-4 mb-2">7. Links to Other Websites</h2>
         <p className="mb-4">
-          Our website may contain links to other websites that are not operated by us. If you click on a third-party link, you will be directed to that third-party's website. We strongly advise you to review the privacy policy of every site you visit. We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party sites or services.
+          Our website may contain links to other websites that are not operated by us. If you click on a third-party link, you will be directed to that third-party&apos;s website. We strongly advise you to review the privacy policy of every site you visit. We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party sites or services.
         </p>
 
         <h2 className="text-2xl font-semibold mt-4 mb-2">8. Changes to This Privacy Policy</h2>
         <p className="mb-4">
-          We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date at the top of this Privacy Policy. You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.
+          We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the &quot;Last Updated&quot; date at the top of this Privacy Policy. You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.
         </p>
 
         <h2 className="text-2xl font-semibold mt-4 mb-2">9. Contact Us</h2>
