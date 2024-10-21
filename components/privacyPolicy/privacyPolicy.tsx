@@ -12,7 +12,8 @@ const PrivacyPolicy: React.FC = () => {
       </Head>
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-3xl font-bold mb-4">Privacy Policy</h1>
-        <p className="mb-4">Last Updated: [Insert Date]</p>
+        <p className="mb-4">Last Updated: October 20, 2024</p>
+
         <p className="mb-4">
           Welcome to Keybolt! Your privacy is important to us, and we are committed to protecting the personal information you share with us. This Privacy Policy explains how Keybolt collects, uses, and discloses your personal information when you visit or use our website and services.
         </p>
