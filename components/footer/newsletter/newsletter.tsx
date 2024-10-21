@@ -2,20 +2,25 @@
 
 import React from 'react';
 import toast from 'react-hot-toast';
-import { useState } from 'react';
-import {GradientShadowButton}  from "@/components/hover.me/button"
+import { useState, ChangeEvent, FormEvent } from 'react';
+import { GradientShadowButtonforNewsletter } from "@/components/hover.me/button"
 export default function Newsletter() {
+  const [email, setEmail] = useState<string>('');
 
-  const [email, setEmail] = useState('');
-
-  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setEmail(event.target.value);
+  const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setEmail(e.target.value);
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = (e: FormEvent) => {
+    e.preventDefault();
+    const subject = "Newsletter Subscription";
+    const body = `Please subscribe the following email address: ${email}`;
+    const mailtoLink = `mailto:abhinav@oakley.website?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoLink;
 
-    setEmail('');
-    toast.success("successfully signed in ")
+    setEmail("")
+
+
   };
   return (
     <div className="relative isolate overflow-hidden  py-16 sm:py-24 lg:py-32">
@@ -24,13 +29,25 @@ export default function Newsletter() {
           <div className="max-w-xl lg:max-w-lg">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Subscribe to our newsletter.</h2>
             <p className="mt-4 text-lg leading-8 text-gray-900"> Get the latest updates, tips, and resources to help your food business thrive.. Sign up for our newsletter today.</p>
+
             <div className="mt-6 flex max-w-md gap-x-4">
-              <label htmlFor="email-address" className="sr-only">Email address</label>
-              <input onChange={handleInputChange} value={email} id="email-address" name="email" type="email" autoComplete="email" required className="min-w-0 flex-auto rounded-md border-0 bg-slate-200 px-3.5 py-2  shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6" placeholder="Enter your email" />
-            
-               <GradientShadowButton value={"Submit"} onClick={()=>handleInputChange} />
-                {/* <button onClick={handleSubmit} type="submit" className="flex-none rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold  shadow-sm hover:bg-indigo-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Subscribe</button> */}
+              <label htmlFor="email-address" className="sr-only">
+                Email address
+              </label>
+              <input
+                onChange={handleInputChange}
+                value={email}
+                id="email-address"
+                name="email"
+                type="email"
+                autoComplete="email"
+                required
+                className="min-w-0 flex-auto rounded-md border-0 bg-slate-200 px-3.5 py-2 shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
+                placeholder="Enter your email"
+              />
+              <GradientShadowButtonforNewsletter value="Submit" onClick={handleSubmit} />
             </div>
+
             <div className="text-gray-700 py-4 pr-0 text-sm">we care about your data. Read our <span className='text-indigo-500'>privacy policy</span></div>
           </div>
           <dl className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
