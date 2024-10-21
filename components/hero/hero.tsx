@@ -25,7 +25,7 @@ import { motion } from "framer-motion";
 
 import { IconType } from "react-icons";
 import { useRouter } from "next/navigation"; 
-import { GradientShadowButton } from "../hover.me/button";
+import { GradientShadowButton, GradientShadowHrefLink, GradientShadowlink } from "../hover.me/button";
 
 export const NeuHero = () => {
  
@@ -74,7 +74,7 @@ const Copy = () => {
        To empower local food businesses, Keybolt uses AI-driven tools that streamline operations and boost efficiency.
       </p>
      
-     < GradientShadowButton onClick={handleClick} value={"Get started -   no CC required" }/>
+     < GradientShadowHrefLink href="/sign-in" value={"Get started -   no CC required" }/>
       {/* <button className="rounded-lg bg-indigo-600 p-3 uppercase text-white transition-colors hover:bg-indigo-700">
         <span className="font-bold">Get started - </span> no CC required
       </button> */}
