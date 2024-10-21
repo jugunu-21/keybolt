@@ -4,6 +4,7 @@ import React from 'react';
 import toast from 'react-hot-toast';
 import { useState, ChangeEvent, FormEvent } from 'react';
 import { GradientShadowButtonforNewsletter } from "@/components/hover.me/button"
+import Link from 'next/link';
 export default function Newsletter() {
   const [email, setEmail] = useState<string>('');
 
@@ -48,7 +49,7 @@ export default function Newsletter() {
               <GradientShadowButtonforNewsletter value="Submit" onClick={handleSubmit} />
             </div>
 
-            <div className="text-gray-700 py-4 pr-0 text-sm">we care about your data. Read our <span className='text-indigo-500'>privacy policy</span></div>
+            <div className="text-gray-700 py-4 pr-0 text-sm">we care about your data. Read our   <Link href="/privacyPolicy"><span className='text-indigo-500'>privacy policy</span></Link></div>
           </div>
           <dl className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
             <div className="flex flex-col items-start">
