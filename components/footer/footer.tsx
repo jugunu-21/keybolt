@@ -21,7 +21,7 @@ const FooterLast = () => {
           
             {/* <a href="https://twitter.com/knyttneve" className=" ml-1" target="_blank" rel="noopener noreferrer">@knyttneve</a> */}
           </p>
-          <span className="inline-flex lg:ml-auto lg:mt-0  w-full justify-center  md:justify-start md:w-auto">
+          {/* <span className="inline-flex lg:ml-auto lg:mt-0  w-full justify-center  md:justify-start md:w-auto">
             <a className="text-gray-500">
               <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
                 <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
@@ -44,7 +44,7 @@ const FooterLast = () => {
                 <circle cx="4" cy="4" r="2" stroke="none"></circle>
               </svg>
             </a>
-          </span>
+          </span> */}
 
 
         </div>
