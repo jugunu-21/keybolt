@@ -92,7 +92,7 @@ const MockupScreen = () => {
           <span className="size-2 rounded-full bg-green-400" />
         </div>
         <span className="rounded bg-zinc-600 px-2 py-0.5 text-xs text-zinc-100">
-          keybolt.vercel.app
+          keybolt.uk
         </span>
         <FiChevronDown className="text-white" />
       </div>
@@ -134,28 +134,17 @@ const MockupScreen = () => {
   );
 };
 
-const Logo = () => {
-  // Temp logo from https://logoipsum.com/
-  return (
-    <svg
-      width="32"
-      height="auto"
-      viewBox="0 0 50 39"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className="h-fit fill-zinc-950"
-    >
-      <path
-        d="M16.4992 2H37.5808L22.0816 24.9729H1L16.4992 2Z"
-        stopColor="#09090B"
-      ></path>
-      <path
-        d="M17.4224 27.102L11.4192 36H33.5008L49 13.0271H32.7024L23.2064 27.102H17.4224Z"
-        stopColor="#09090B"
-      ></path>
-    </svg>
-  );
-};
+const Logo = () => (
+  <div className="fill-zinc-950">
+    <Image
+      src="/svg/logo.png"
+      alt="Your Company Name"
+      width={28}
+      height={28}
+      className=" ml-1 h-fit"
+    />
+  </div>
+);
 
 const Logos = () => {
   return (
