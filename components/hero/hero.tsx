@@ -5,11 +5,11 @@ import { FiArrowUpRight, FiBell, FiCheck, FiChevronDown, FiList, FiMessageCircle
 import {
   FaHotdog,
   FaDrumstickBite,
-  FaLemon ,
-  FaUtensils ,
-  FaBacon ,
+  FaLemon,
+  FaUtensils,
+  FaBacon,
   FaCheese,
-  FaCocktail, 
+  FaCocktail,
   FaApple,
   FaStar,
   FaBeer,
@@ -24,11 +24,11 @@ import {
 import { motion } from "framer-motion";
 
 import { IconType } from "react-icons";
-import { useRouter } from "next/navigation"; 
+import { useRouter } from "next/navigation";
 import { GradientShadowButton, GradientShadowHrefLink, GradientShadowlink } from "../hover.me/button";
 
 export const NeuHero = () => {
- 
+
   return (
     <section className="overflow-hidden bg-white mt-4">
       <div className="relative flex flex-col items-center justify-center px-12 pb-48 pt-12 md:pt-24">
@@ -41,8 +41,8 @@ export const NeuHero = () => {
 };
 
 const Copy = () => {
-  const router =useRouter()
-  const handleClick =()=>{
+  const router = useRouter()
+  const handleClick = () => {
     router.push("/contact")
 
   };
@@ -58,8 +58,14 @@ const Copy = () => {
           <span className="rounded-full bg-[#d44a3e] px-2 py-0.5 font-medium text-white">
             HEY!
           </span>
-          <span className="ml-1.5 mr-1 inline-block">
-            We&apos;re live on Product Hunt!
+          <span className=" pr-1 inline-block"> 
+            <Image
+              src="/producthunt.png"
+              alt="Your Company Name"
+              width={100}
+              height={100 }
+              className=" ml-1 h-fit"
+            />
           </span>
           <FiArrowUpRight className="mr-2 inline-block" />
         </a>
@@ -71,10 +77,10 @@ const Copy = () => {
 
         {/* To empowers local food businesses,Keybolt uses AI-driven tools that streamline operations and boost efficiency.
          */}
-       To empower local food businesses, Keybolt uses AI-driven tools that streamline operations and boost efficiency.
+        To empower local food businesses, Keybolt uses AI-driven tools that streamline operations and boost efficiency.
       </p>
-     
-     < GradientShadowHrefLink href="/sign-in" value={"Get started -   no CC required" }/>
+
+      < GradientShadowHrefLink href="/sign-in" value={"Get started -   no CC required"} />
       {/* <button className="rounded-lg bg-indigo-600 p-3 uppercase text-white transition-colors hover:bg-indigo-700">
         <span className="font-bold">Get started - </span> no CC required
       </button> */}
@@ -197,10 +203,10 @@ const TranslateWrapper = ({
   );
 };
 
-const LogoItem = ({ Icon, name ,IconClr}: { Icon: IconType; name: string;IconClr:string }) => {
+const LogoItem = ({ Icon, name, IconClr }: { Icon: IconType; name: string; IconClr: string }) => {
   return (
     <span className="flex items-center justify-center gap-4 px-4 py-2 md:py-4">
-<Icon className={`text-2xl ${IconClr} md:text-3xl`} />
+      <Icon className={`text-2xl ${IconClr} md:text-3xl`} />
 
       <span className="whitespace-nowrap text-xl font-semibold uppercase md:text-2xl">
         {name}
@@ -211,28 +217,28 @@ const LogoItem = ({ Icon, name ,IconClr}: { Icon: IconType; name: string;IconClr
 
 const LogoItemsTop = () => (
   <>
-<LogoItem Icon={FaApple} name="Granny Smith" IconClr="text-red-600" /> {/* Apple Brand */}
-<LogoItem Icon={FaCoffee} name="Blue Bottle Coffee" IconClr="text-yellow-500" /> {/* Coffee Brand */}
-<LogoItem Icon={FaBeer} name="Bell's Brewery" IconClr="text-blue-600" /> {/* Beer Brand */}
-<LogoItem Icon={FaHamburger} name="In-N-Out Burger" IconClr="text-green-600" /> {/* Hamburger Brand */}
-<LogoItem Icon={FaPizzaSlice} name="PizzaExpress" IconClr="text-purple-600" /> {/* Pizza Brand */}
-<LogoItem Icon={FaIceCream} name="Häagen-Dazs" IconClr="text-pink-600" /> {/* Ice Cream Brand */}
-<LogoItem Icon={FaCookie} name="Lenny & Larry's" IconClr="text-brown-600" /> {/* Cookie Brand */}
-<LogoItem Icon={FaWineBottle} name="Fess Parker Winery" IconClr="text-teal-600" /> {/* Wine Brand */}
-<LogoItem Icon={FaCarrot} name="Earthbound Farm" IconClr="text-orange-600" /> {/* Organic Produce Brand */}
+    <LogoItem Icon={FaApple} name="Granny Smith" IconClr="text-red-600" /> {/* Apple Brand */}
+    <LogoItem Icon={FaCoffee} name="Blue Bottle Coffee" IconClr="text-yellow-500" /> {/* Coffee Brand */}
+    <LogoItem Icon={FaBeer} name="Bell's Brewery" IconClr="text-blue-600" /> {/* Beer Brand */}
+    <LogoItem Icon={FaHamburger} name="In-N-Out Burger" IconClr="text-green-600" /> {/* Hamburger Brand */}
+    <LogoItem Icon={FaPizzaSlice} name="PizzaExpress" IconClr="text-purple-600" /> {/* Pizza Brand */}
+    <LogoItem Icon={FaIceCream} name="Häagen-Dazs" IconClr="text-pink-600" /> {/* Ice Cream Brand */}
+    <LogoItem Icon={FaCookie} name="Lenny & Larry's" IconClr="text-brown-600" /> {/* Cookie Brand */}
+    <LogoItem Icon={FaWineBottle} name="Fess Parker Winery" IconClr="text-teal-600" /> {/* Wine Brand */}
+    <LogoItem Icon={FaCarrot} name="Earthbound Farm" IconClr="text-orange-600" /> {/* Organic Produce Brand */}
   </>
 );
 
 const LogoItemsBottom = () => (
   <>
-<LogoItem Icon={FaApple} name="Granny Smith" IconClr="text-red-600" /> {/* Apple Brand */}
-<LogoItem Icon={FaCoffee} name="Blue Bottle Coffee" IconClr="text-yellow-500" /> {/* Coffee Brand */}
-<LogoItem Icon={FaBeer} name="Bell's Brewery" IconClr="text-blue-600" /> {/* Beer Brand */}
-<LogoItem Icon={FaHamburger} name="In-N-Out Burger" IconClr="text-green-600" /> {/* Hamburger Brand */}
-<LogoItem Icon={FaPizzaSlice} name="PizzaExpress" IconClr="text-purple-600" /> {/* Pizza Brand */}
-<LogoItem Icon={FaIceCream} name="Häagen-Dazs" IconClr="text-pink-600" /> {/* Ice Cream Brand */}
-<LogoItem Icon={FaCookie} name="Lenny & Larry's" IconClr="text-brown-600" /> {/* Cookie Brand */}
-<LogoItem Icon={FaWineBottle} name="Fess Parker Winery" IconClr="text-teal-600" /> {/* Wine Brand */}
-<LogoItem Icon={FaCarrot} name="Earthbound Farm" IconClr="text-orange-600" /> {/* Organic Produce Brand */}
+    <LogoItem Icon={FaApple} name="Granny Smith" IconClr="text-red-600" /> {/* Apple Brand */}
+    <LogoItem Icon={FaCoffee} name="Blue Bottle Coffee" IconClr="text-yellow-500" /> {/* Coffee Brand */}
+    <LogoItem Icon={FaBeer} name="Bell's Brewery" IconClr="text-blue-600" /> {/* Beer Brand */}
+    <LogoItem Icon={FaHamburger} name="In-N-Out Burger" IconClr="text-green-600" /> {/* Hamburger Brand */}
+    <LogoItem Icon={FaPizzaSlice} name="PizzaExpress" IconClr="text-purple-600" /> {/* Pizza Brand */}
+    <LogoItem Icon={FaIceCream} name="Häagen-Dazs" IconClr="text-pink-600" /> {/* Ice Cream Brand */}
+    <LogoItem Icon={FaCookie} name="Lenny & Larry's" IconClr="text-brown-600" /> {/* Cookie Brand */}
+    <LogoItem Icon={FaWineBottle} name="Fess Parker Winery" IconClr="text-teal-600" /> {/* Wine Brand */}
+    <LogoItem Icon={FaCarrot} name="Earthbound Farm" IconClr="text-orange-600" /> {/* Organic Produce Brand */}
   </>
 );
