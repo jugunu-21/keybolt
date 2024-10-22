@@ -3,8 +3,9 @@
 import React from 'react';
 import toast from 'react-hot-toast';
 import { useState, ChangeEvent, FormEvent } from 'react';
-import { GradientShadowButtonforNewsletter } from "@/components/hover.me/button"
+import { GradientShadowButton } from "@/components/hover.me/button"
 import Link from 'next/link';
+import { Toast } from 'react-toastify/dist/components';
 export default function Newsletter() {
   const [email, setEmail] = useState<string>('');
 
@@ -12,14 +13,10 @@ export default function Newsletter() {
     setEmail(e.target.value);
   };
 
-  const handleSubmit = (e: FormEvent) => {
-    e.preventDefault();
-    const subject = "Newsletter Subscription";
-    const body = `Please subscribe the following email address: ${email}`;
-    const mailtoLink = `mailto:abhinav@oakley.website?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    window.location.href = mailtoLink;
-
+  const handleSubmit = () => {
+  
     setEmail("")
+    toast.success('Successfully subscribed!');
 
 
   };
@@ -46,7 +43,7 @@ export default function Newsletter() {
                 className="min-w-0 flex-auto rounded-md border-0 bg-slate-200 px-3.5 py-2 shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
                 placeholder="Enter your email"
               />
-              <GradientShadowButtonforNewsletter value="Submit" onClick={handleSubmit} />
+              <GradientShadowButton  value="Submit" onClick={handleSubmit} />
             </div>
 
             <div className="text-gray-700 py-4 pr-0 text-sm">we care about your data. Read our   <Link href="/privacyPolicy"><span className='text-indigo-500'>privacy policy</span></Link></div>
