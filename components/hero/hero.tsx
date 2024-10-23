@@ -61,7 +61,7 @@ const Copy = () => {
               alt="Your Company Name"
               width={100}
               height={100}
-              className=" h-8 md:h-10 w-full"
+              className=" h-8 md:h-12 w-full"
             />
           </span>
  

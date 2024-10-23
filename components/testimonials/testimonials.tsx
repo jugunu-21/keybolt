@@ -18,9 +18,9 @@ const StackedCardTestimonials = () => {
   const [selected, setSelected] = useState(0);
 
   return (
-    <section id="testimonial" className="bg-white py-10 px-4 lg:px-8 grid items-center grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4 overflow-hidden">
+    <section id="testimonial" className="bg-white py-16 px-4 lg:px-8 grid items-center grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4 overflow-hidden ">
       <div className="p-4">
-        <h3 className="text-5xl font-semibold">What our customers think</h3>
+        <h3 className="text-3xl sm:text-4xl font-semibold">What our customers think</h3>
         <p className="text-slate-500 my-4">
         Our customers rave about the impact Keybolt has had on their businesses. They appreciate how our AI-driven tools simplify complex tasks, enhance operational efficiency, and deliver actionable insights. From optimizing inventory to streamlining ordering processes, Keybolt is praised for making sophisticated technology accessible and effective for food businesses of all sizes.
         </p>

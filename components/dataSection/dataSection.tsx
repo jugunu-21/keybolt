@@ -10,27 +10,10 @@ export default function Section() {
     }
     return (
         <>
-            <section className="text-gray-600 body-font">
+            <section className="text-gray-600 body-font bg-gray-50 py-2">
             <div className="  container px-5 mx-auto">
-                    <h2 className="text-gray-900 text-3xl sm:text-5xl text-center content-center font-extrabold align-middle  mb-2">Why Choose Keybolt</h2>
-                    <div className=" relative container mb-5 w-full top-0 ">
-                        <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[px] blur-sm" />
-                        <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px " />
-                        {/* <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[10px]  blur-sm" /> */}
-                        <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] blur-sm" />
-                        <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-2px" />
-                        <div className="absolute inset-x-40 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[7px]  blur-sm" />
-                        <div className="absolute inset-x-80 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-2px " />
-                        <SparklesCore
-                            background="transparent"
-                            minSize={0.4}
-                            maxSize={1}
-                            particleDensity={1200}
-                            className="w-full h-full"
-                            particleColor="#FFFFFF"
-                        />
-
-                    </div></div>
+                    <h2 className="text-gray-900 text-3xl sm:text-4xl text-center content-center font-semibold align-middle my-4 p-8 m-2">Why Choose Keybolt</h2>
+                    </div>
                 <div className="container px-5 pb-10 mx-auto">
                     <div className="flex items-center lg:w-4/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
                         <div className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">

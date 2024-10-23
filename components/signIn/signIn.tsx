@@ -28,7 +28,7 @@ export function SigninFormDemo() {
       return; // Prevent submission if validation fails
     }
     if (formData.email || formData.password) {
-      toast.error("Please enter a valid email address and password to continue.");
+      toast.error("User and password not found");
       setFormData({
         firstname: "",
         lastname: "",
