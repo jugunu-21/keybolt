@@ -55,17 +55,16 @@ const Copy = () => {
           // rel="nofollow"
           className="flex origin-top-left items-center rounded-xl border border-zinc-900 bg-white p-0.5 text-sm transition-transform hover:-rotate-2"
         >
-
           <span className="p-1 inline-flex w-full">
             <Image
               src="/producthunt.png"
               alt="Your Company Name"
               width={100}
               height={100}
-              className=" h-8 md:h-12 w-full"
+              className=" h-8 md:h-10 w-full"
             />
           </span>
-
+ 
         </a>
       </div>
       <h1 className="max-w-4xl text-center text-3xl font-black leading-[1.15] md:text-5xl md:leading-[1.15]">
