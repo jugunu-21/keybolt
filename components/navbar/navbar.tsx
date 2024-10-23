@@ -59,6 +59,7 @@ const NavLeft = ({
       <NavLink  text="Contact Us" link="/contact"/>
       <NavLink text="Testimonials"link="/#testimonial" />
       <NavLink text="Features" link="/#feature"/>
+      <NavLink text="Our Team" link="/our-team"/>
     </div>
   );
 };

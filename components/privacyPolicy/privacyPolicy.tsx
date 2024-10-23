@@ -88,7 +88,7 @@ const PrivacyPolicy: React.FC = () => {
           If you have any questions about this Privacy Policy, please contact us:
         </p>
         <ul className="list-disc list-inside mb-4">
-          <li>Email: Abhinav@oakley.website</li>
+          <li>Email: audrius@keybolt.uk </li>
           <li>Website: https://keybolt.uk/</li>
         </ul>
       </div>
