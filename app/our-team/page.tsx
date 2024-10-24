@@ -72,7 +72,7 @@ export default function Dashboard() {
                                 <a href="#">Salman Suleman</a>
                             </h3>
                             <span className="text-gray-500 dark:text-gray-400">Chief Technology officer</span>
-                            <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">Salman leads Keybolt's technology growth and AI development.</p>
+                            <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">Salman drives  technological growth, leading AI development and software engineering </p>
                             <ul className="flex space-x-4 sm:mt-0">
                                 <li>
                                     <a href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
