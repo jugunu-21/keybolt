@@ -103,6 +103,7 @@ const NavMenu = ({ isOpen,handler }: { isOpen: boolean,handler:()=>void }) => {
       <MenuLink handler={handler}text="Contact Us" link="/contact"/>
       <MenuLink handler={handler} text="Testimonials"link="/#testimonial" />
       <MenuLink  handler={handler} text="Features" link="/#feature"/>
+      <MenuLink  handler={handler} text="Our Team" link="/our-team"/>
     </motion.div>
   );
 };
