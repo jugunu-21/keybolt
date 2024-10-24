@@ -2,6 +2,7 @@
 import Image from 'next/image';
 export default function Dashboard() {
     return (
+
         <section className="bg-white dark:bg-gray-900">
             <div className="py-8 px-4 mx-auto max-w-screen-xl md:py-16 md:px-6 ">
                 <div className="mx-auto max-w-screen-sm text-center mb-8 md:mb-16">
@@ -15,12 +16,14 @@ export default function Dashboard() {
                     <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
                         <a href="#">
                             <Image
-                                width={100} height={100}
-
-                                className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
+                                // layout="responsive"
+                                width={500}
+                                height={500}
+                                className=" rounded-lg sm:rounded-none sm:rounded-l-lg"
                                 src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
                                 alt="Bonnie Avatar"
                             />
+
                         </a>
                         <div className="p-5"><s></s>
                             <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -52,17 +55,24 @@ export default function Dashboard() {
                             </ul>
                         </div>
                     </div>
+
                     <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
                         <a href="#">
-                            <Image width={100} height={100}
-                                className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png" alt="Jese Avatar" />
+                            <Image
+                                // layout="responsive"
+                                width={500}
+                                height={500}
+                                className=" rounded-lg sm:rounded-none sm:rounded-l-lg"
+                                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
+                                alt="Bonnie Avatar"
+                            />
                         </a>
                         <div className="p-5">
                             <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                                 <a href="#">Salman Suleman</a>
                             </h3>
                             <span className="text-gray-500 dark:text-gray-400">Chief Technology officer</span>
-                            <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">Salman drives Keybolt's technological growth, leading AI development and software engineering.</p>
+                            <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">Salman leads Keybolt's technology growth and AI development.</p>
                             <ul className="flex space-x-4 sm:mt-0">
                                 <li>
                                     <a href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
@@ -90,7 +100,8 @@ export default function Dashboard() {
 
                     <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
                         <a href="#">
-                            <Image width={100} height={100} className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/sofia-mcguire.png" alt="Sofia Avatar" />
+                            <Image width={500}
+                                height={500} className="rounded-lg sm:rounded-none sm:rounded-l-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/sofia-mcguire.png" alt="Sofia Avatar" />
                         </a>
                         <div className="p-5">
                             <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -124,7 +135,8 @@ export default function Dashboard() {
                     </div>
                     <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
                         <a href="#">
-                            <Image height={100} width={100} className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="Michael Avatar" />
+                            <Image width={500}
+                                height={500} className=" rounded-lg sm:rounded-none sm:rounded-l-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="Michael Avatar" />
                         </a>
                         <div className="p-5">
                             <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -159,7 +171,8 @@ export default function Dashboard() {
                     </div>
                     <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
                         <a href="#">
-                            <Image height={100} width={100} className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="Michael Avatar" />
+                            <Image width={500}
+                                height={500} className=" rounded-lg sm:rounded-none sm:rounded-l-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="Michael Avatar" />
                         </a>
                         <div className="p-5">
                             <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
