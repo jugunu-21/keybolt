@@ -30,8 +30,7 @@ export function SigninFormDemo() {
     if (formData.email || formData.password) {
       toast.error("User and password not found");
       setFormData({
-        firstname: "",
-        lastname: "",
+
         email: "",
         password: "",
       });
