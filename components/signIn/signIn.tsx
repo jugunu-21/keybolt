@@ -8,8 +8,8 @@ import toast from "react-hot-toast";
 
 export function SigninFormDemo() {
   const [formData, setFormData] = useState({
-    firstname: "",
-    lastname: "",
+    // firstname: "",
+    // lastname: "",
     email: "",
     password: "",
   });
@@ -41,8 +41,8 @@ export function SigninFormDemo() {
     console.log("Form submitted", formData);
 
     setFormData({
-      firstname: "",
-      lastname: "",
+      // firstname: "",
+      // lastname: "",
       email: "",
       password: "",
     });
@@ -58,28 +58,7 @@ export function SigninFormDemo() {
       </p>
 
       <form className="my-8" onSubmit={handleSubmit}>
-        <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
-          <LabelInputContainer>
-            <Label htmlFor="firstname">First name</Label>
-            <Input
-              id="firstname"
-              placeholder="John"
-              type="text"
-              value={formData.firstname}
-              onChange={handleChange}
-            />
-          </LabelInputContainer>
-          <LabelInputContainer>
-            <Label htmlFor="lastname">Last name</Label>
-            <Input
-              id="lastname"
-              placeholder="Michael"
-              type="text"
-              value={formData.lastname}
-              onChange={handleChange}
-            />
-          </LabelInputContainer>
-        </div>
+
         <LabelInputContainer className="mb-4">
           <Label htmlFor="email">Email Address</Label>
           <Input
@@ -103,7 +82,7 @@ export function SigninFormDemo() {
         <GradientShadowButtonforSignIn
           value={"Sign in"}
           Icon={BottomGradient}
-          onClick={() => {}}
+          onClick={() => { }}
         />
         <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-8 h-[1px] w-full" />
       </form>
