@@ -140,7 +140,7 @@ const MockupScreen = () => {
 const Logo = () => (
   <div className="fill-zinc-950">
     <Image
-      src="/svg/logo.png"
+      src="/svg/logo.svg"
       alt="Your Company Name"
       width={28}
       height={28}
