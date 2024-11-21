@@ -34,7 +34,7 @@ const Logo = () => {
   // Temp logo from https://logoipsum.com/
   return (
     // <div></div>
-    <Image src="/svg/logo.png" width={30} height={20} alt="img" />
+    <Image src="/svg/logo.svg" width={30} height={20} alt="img" />
   );
 };
 
