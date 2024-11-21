@@ -59,7 +59,7 @@ const NavLeft = ({
       <NavLink text="Contact Us" link="/contact" />
       <NavLink text="Testimonials" link="/#testimonial" />
       <NavLink text="Features" link="/#feature" />
-      <NavLink text="Our Team" link="/our-team" />
+      {/* <NavLink text="Our Team" link="/our-team" /> */}
     </div>
   );
 };
@@ -103,7 +103,7 @@ const NavMenu = ({ isOpen, handler }: { isOpen: boolean, handler: () => void }) 
       <MenuLink handler={handler} text="Contact Us" link="/contact" />
       <MenuLink handler={handler} text="Testimonials" link="/#testimonial" />
       <MenuLink handler={handler} text="Features" link="/#feature" />
-      <MenuLink handler={handler} text="Our Team" link="/our-team" />
+      {/* <MenuLink handler={handler} text="Our Team" link="/our-team" /> */}
     </motion.div>
   );
 };

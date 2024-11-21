@@ -1,6 +1,6 @@
-
+"use Client"
 import Image from 'next/image';
-export default function Dashboard() {
+export default function OurTeam() {
     return (
 
         <section className="bg-white dark:bg-gray-900">
